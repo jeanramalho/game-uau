@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import Header from './src/Components/Header'
+import Main from './src/Components/Main'
 
 
 
@@ -9,7 +9,7 @@ import Header from './src/Components/Header'
 export default function App() {
   return (
     <View style={styles.container}>
-      <Header />
+      <Main />
     </View>
   );
 }
