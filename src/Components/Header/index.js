@@ -6,7 +6,7 @@ export class index extends Component {
   render() {
     return (
       <View style={styles.header}>
-        <Text style={styles.header}>Game UAU</Text>
+        <Text>Game UAU</Text>
       </View>
     )
   }
