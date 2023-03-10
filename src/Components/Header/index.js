@@ -5,7 +5,7 @@ import styles from "./style"
 export class index extends Component {
   render() {
     return (
-      <View style={styles.header}>
+      <View style={styles.container}>
         <Text>Game UAU</Text>
       </View>
     )
