@@ -13,6 +13,9 @@ const styles = StyleSheet.create({
         height: 120,
         marginTop: 0,
         paddingTop: 0,
+        justifyContent: "center",
+        alignItems: "center",
+        textAlign: "center",
     }
 })
 
