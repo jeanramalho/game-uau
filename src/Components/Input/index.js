@@ -7,9 +7,8 @@ export class index extends Component {
     return (
       <View style={styles.container}>
         <TextInput
-                style={styles.inpu}
-                placeholder= "Ex. 1.75"
-                keyboardType="numeric"
+                style={styles.input}
+                placeholder= "Nome Completo"
                 />
       </View>
     )
