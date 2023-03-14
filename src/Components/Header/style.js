@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
     },
     header: {
         width: "100%",
-        backgroundColor: "#00ffff",
+        backgroundColor: "#19e5e6",
         height: 120,
         marginTop: 0,
         paddingTop: 0,
@@ -20,7 +20,6 @@ const styles = StyleSheet.create({
     text: {
         fontSize: 30,
         fontWeight: 600,
-        fontFamily: "Calibri",
         
     }
 })
