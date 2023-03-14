@@ -9,7 +9,7 @@ export class index extends Component {
     return (
       <View>
         <Header/>
-        <Input />
+        <Input/>
       </View>
     )
   }

@@ -1,6 +1,7 @@
 import { Text, View } from 'react-native'
 import React, { Component } from 'react'
 import Header from '../Header/'
+import Input from "../Input/"
 
 
 
@@ -9,6 +10,7 @@ export class index extends Component {
     return (
       <View>
         <Header/>
+        <Input />
       </View>
     )
   }
