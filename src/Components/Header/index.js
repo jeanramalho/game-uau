@@ -7,7 +7,7 @@ export class index extends Component {
     return (
       <View style={styles.container}>
         <View style={styles.header}>
-          <Text>Game UAU</Text>
+          <Text style={styles.text}>Game UAU</Text>
         </View>
       </View>
     )
