@@ -6,7 +6,7 @@ import styles from "./style"
 export class index extends Component {
   render() {
     return (
-      <View>
+      <View style={styles.container}>
         <Text>Olá Mundo</Text>
       </View>
     )
