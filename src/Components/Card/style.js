@@ -10,6 +10,7 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         alignContent: "center",
         justifyContent: "space-around",
+        marginBottom: 10,
     },
 
     participante: {

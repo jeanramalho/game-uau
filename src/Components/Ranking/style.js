@@ -7,11 +7,14 @@ const styles = StyleSheet.create({
         marginTop: 0,
         backgroundColor: "#cecece",
         borderRadius: 8,
+        justifyContent: "center",
+        alignItems: "center",
     },
 
     title: {
         width: '100%',
         fontSize: 20,
+        marginBottom: 15,
     },
    
 })
