@@ -8,7 +8,13 @@ export class index extends Component {
     return (
       <View style={styles.container}>
         <Text>Ranking Liderança</Text>
-        
+        <View>
+            <Text>Nome do Participante</Text>
+            <View>
+                
+            </View>
+            <Text>100</Text>
+        </View>
       </View>
     )
   }
