@@ -8,6 +8,7 @@ export class index extends Component {
   render() {
     return (
       <View style={styles.container}>
+        <Text style={styles.title}> Ranking Liderança</Text>
         <Card />
       </View>
     )
