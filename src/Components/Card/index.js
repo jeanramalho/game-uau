@@ -11,9 +11,10 @@ export class index extends Component {
         <View>
             <Text>Nome do Participante</Text>
             <View>
-                
+                <Text>100</Text>
+                <Text>pts</Text>
             </View>
-            <Text>100</Text>
+            
         </View>
       </View>
     )
