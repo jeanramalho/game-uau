@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
     container:{
-        width: "80%",
+        width: "90%",
         padding: 10,
         marginTop: 0,
         backgroundColor: "#cecece",
@@ -12,7 +12,6 @@ const styles = StyleSheet.create({
     title: {
         width: '100%',
         fontSize: 20,
-        color: '#000',
     },
    
 })

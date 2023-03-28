@@ -6,15 +6,14 @@ import styles from "./style"
 export class index extends Component {
   render() {
     return (
+           
       <View style={styles.container}>
-        <View>
-            <Text>Nome do Participante</Text>
-            <View>
-                <Text>100</Text>
-                <Text>pts</Text>
-            </View>
-            
-        </View>
+         <Text style={styles.participante}>Nome do Participante</Text>
+          
+        <Text>100</Text>
+        <Text>pts</Text>
+                    
+       
       </View>
     )
   }
