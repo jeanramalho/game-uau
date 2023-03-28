@@ -11,6 +11,11 @@ const styles = StyleSheet.create({
         borderRadius: 8,
     },
 
+    title: {
+        fontSize: 20,
+        color: '#000',
+    }
+
     
    
 })
