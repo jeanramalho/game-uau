@@ -7,7 +7,7 @@ export class index extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Ranking Liderança</Text>
+        <Text styles={styles.title}> Ranking Liderança</Text>
         <View>
             <Text>Nome do Participante</Text>
             <View>

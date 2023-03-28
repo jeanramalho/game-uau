@@ -7,11 +7,12 @@ const styles = StyleSheet.create({
         padding: 10,
         flex: 1,
         marginTop: 0,
-        backgroundColor: "#f1f1f1",
+        // backgroundColor: "#f1f1f1",
         borderRadius: 8,
     },
 
     title: {
+        width: '100%',
         fontSize: 20,
         color: '#000',
     }
