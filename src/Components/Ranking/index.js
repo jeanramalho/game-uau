@@ -9,7 +9,7 @@ export class index extends Component {
     return (
       <View style={styles.container}>
         <Text style={styles.title}> Ranking Liderança</Text>
-        <Card />
+        <Card pontos={100} participante={"Jean Ramalho"}/>
       </View>
     )
   }

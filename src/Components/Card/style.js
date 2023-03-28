@@ -14,9 +14,11 @@ const styles = StyleSheet.create({
 
     participante: {
         fontSize: 15,
-    }
+    },
 
-    
+    pontuacao: {
+        flexDirection: "row",
+    }
    
 })
 
