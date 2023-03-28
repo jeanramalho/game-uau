@@ -8,11 +8,11 @@ export class index extends Component {
     return (
            
       <View style={styles.container}>
-         <Text style={styles.participante}>Nome do Participante</Text>
-          
-        <Text>100</Text>
-        <Text>pts</Text>
-                    
+        <Text style={styles.participante}>Nome do Participante</Text>
+        <View>
+            <Text>100</Text>
+            <Text>pts</Text>
+        </View>                  
        
       </View>
     )
