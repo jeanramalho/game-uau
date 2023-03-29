@@ -4,8 +4,8 @@ import styles from "./style"
 import Card from "../Card"
 
 
-const Ranking => ({tipo}) => {
- 
+const Ranking = ({tipo}) => {
+  if(tipo == "liderança") {
     return (
       <View style={styles.container}>
         <Text style={styles.title}> Ranking Liderança</Text>
@@ -14,7 +14,19 @@ const Ranking => ({tipo}) => {
         <Card pontos={80} participante={"Carol Deó"}/>
       </View>
     )
+  } else {
+    return (
+      <View style={styles.container}>
+        <Text style={styles.title}> Ranking Classe</Text>
+        <Card pontos={100} participante={"Grazi"}/>
+        <Card pontos={90} participante={"Neia"}/>
+        <Card pontos={80} participante={"Deyse"}/>
+      </View>
+    )
+  }
+ 
+    
   
 }
 
-export default index
+export default Ranking
