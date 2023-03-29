@@ -11,8 +11,12 @@ export class index extends Component {
     return (
       <View style={styles.container}>
         <Header />
-        <Ranking tipo="lid" />
-        <Ranking tipo="classe" />
+        
+        <View style={styles.rankings}>  
+          <Ranking tipo="lid" />
+          <Ranking tipo="classe" />
+        </View>
+        
       </View>
     )
   }
