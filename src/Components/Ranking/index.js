@@ -4,8 +4,8 @@ import styles from "./style"
 import Card from "../Card"
 
 
-export class index extends Component {
-  render() {
+const Ranking => ({tipo}) => {
+ 
     return (
       <View style={styles.container}>
         <Text style={styles.title}> Ranking Liderança</Text>
@@ -14,7 +14,7 @@ export class index extends Component {
         <Card pontos={80} participante={"Carol Deó"}/>
       </View>
     )
-  }
+  
 }
 
 export default index
