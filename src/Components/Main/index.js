@@ -10,7 +10,8 @@ export class index extends Component {
     return (
       <View>
         <Header />
-        <Ranking />
+        <Ranking tipo="lid" />
+        <Ranking tipo="classe" />
       </View>
     )
   }
