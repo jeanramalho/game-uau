@@ -5,7 +5,7 @@ import Card from "../Card"
 
 
 const Ranking = ({tipo}) => {
-  if(tipo == "liderança") {
+  if(tipo == "lid") {
     return (
       <View style={styles.container}>
         <Text style={styles.title}> Ranking Liderança</Text>
