@@ -14,7 +14,7 @@ const Ranking = ({tipo}) => {
         <Card pontos={80} participante={"Carol Deó"}/>
       </View>
     )
-  } else {
+  } else if(tipo == "classe"){
     return (
       <View style={styles.container}>
         <Text style={styles.title}> Ranking Classe</Text>
