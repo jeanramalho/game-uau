@@ -14,7 +14,7 @@ const Ranking = ({tipo}) => {
         <Card pontos={90} participante={"Victor Silva"}/>
         <Card pontos={80} participante={"Carol Deó"}/>
         <TouchableOpacity style={styles.botao}>
-                    <Text>Ver Ranking Completo</Text>
+                    <Text style={styles.textBotao}>Ver Ranking Completo</Text>
         </TouchableOpacity>
       </View>
     )
@@ -26,7 +26,7 @@ const Ranking = ({tipo}) => {
         <Card pontos={90} participante={"Neia"}/>
         <Card pontos={80} participante={"Deyse"}/>
         <TouchableOpacity style={styles.botao}>
-                    <Text>Ver Ranking Completo</Text>
+                    <Text style={styles.textBotao}>Ver Ranking Completo</Text>
         </TouchableOpacity>
       </View>
     )

@@ -24,8 +24,8 @@ const styles = StyleSheet.create({
         borderRadius: 6, 
     },
     textBotao: {
-        color: "#cecece",
-        fontSize: 20,
+        color: "#fff",
+        fontSize: 15,
         fontWeight: "bold",
     },
    
