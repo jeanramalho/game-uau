@@ -17,6 +17,12 @@ const styles = StyleSheet.create({
         marginBottom: 15,
         textAlign: "center",
     },
+
+    botao: {
+        padding: 5,
+        backgroundColor: "#00cccc",
+        borderRadius: 5, 
+    }
    
 })
 
