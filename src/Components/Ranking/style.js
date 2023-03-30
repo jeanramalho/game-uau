@@ -22,11 +22,13 @@ const styles = StyleSheet.create({
         padding: 10,
         backgroundColor: "#00cccc",
         borderRadius: 6, 
+        margin: 10,
     },
     textBotao: {
         color: "#fff",
         fontSize: 15,
         fontWeight: "bold",
+        textTransform: "uppercase",
     },
    
 })
