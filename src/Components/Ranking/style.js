@@ -19,10 +19,15 @@ const styles = StyleSheet.create({
     },
 
     botao: {
-        padding: 5,
+        padding: 10,
         backgroundColor: "#00cccc",
-        borderRadius: 5, 
-    }
+        borderRadius: 6, 
+    },
+    textBotao: {
+        color: "#cecece",
+        fontSize: 20,
+        fontWeight: "bold",
+    },
    
 })
 
