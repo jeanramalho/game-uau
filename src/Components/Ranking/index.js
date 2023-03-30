@@ -12,6 +12,7 @@ const Ranking = ({tipo}) => {
         <Card pontos={100} participante={"Jean Ramalho"}/>
         <Card pontos={90} participante={"Victor Silva"}/>
         <Card pontos={80} participante={"Carol Deó"}/>
+        <Button title='Ver Ranking Completo'/>
       </View>
     )
   } else if(tipo == "classe"){
@@ -21,6 +22,7 @@ const Ranking = ({tipo}) => {
         <Card pontos={100} participante={"Grazi"}/>
         <Card pontos={90} participante={"Neia"}/>
         <Card pontos={80} participante={"Deyse"}/>
+        <Button title='Ver Ranking Completo'/>
       </View>
     )
   }
