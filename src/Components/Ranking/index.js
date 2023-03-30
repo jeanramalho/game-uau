@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import styles from "./style"
 import Card from "../Card"
 
-const textBotao = "Ver Ranking Completo"
+
 
 const Ranking = ({tipo}) => {
   if(tipo == "lid") {
@@ -13,7 +13,9 @@ const Ranking = ({tipo}) => {
         <Card pontos={100} participante={"Jean Ramalho"}/>
         <Card pontos={90} participante={"Victor Silva"}/>
         <Card pontos={80} participante={"Carol Deó"}/>
-        <TouchableOpacity  style={styles.botao} > <Text>{textBotao}</Text> </TouchableOpacity>
+        <TouchableOpacity style={styles.botao}>
+                    <Text>Ver Ranking Completo</Text>
+        </TouchableOpacity>
       </View>
     )
   } else if(tipo == "classe"){
@@ -23,7 +25,9 @@ const Ranking = ({tipo}) => {
         <Card pontos={100} participante={"Grazi"}/>
         <Card pontos={90} participante={"Neia"}/>
         <Card pontos={80} participante={"Deyse"}/>
-        <TouchableOpacity style={styles.botao} > <Text>{textBotao}</Text> </TouchableOpacity>
+        <TouchableOpacity style={styles.botao}>
+                    <Text>Ver Ranking Completo</Text>
+        </TouchableOpacity>
       </View>
     )
   }
