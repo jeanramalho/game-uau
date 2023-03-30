@@ -1,4 +1,4 @@
-import {Text, View } from 'react-native'
+import {Text, View, Button } from 'react-native'
 import React, { Component } from 'react'
 import styles from "./style"
 import Card from "../Card"
