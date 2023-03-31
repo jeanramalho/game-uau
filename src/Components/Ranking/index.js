@@ -5,15 +5,22 @@ import Card from "../Card"
 
 
 
-const Ranking = ({tipo}) => {
+const Ranking = ({tipo, nav}) => {
+
+ 
+
   if(tipo == "lid") {
+    function openRanking(){
+      nav.navigate('CompleteRanking')
+    }
+
     return (
       <View style={styles.container}>
         <Text style={styles.title}> Ranking Liderança</Text>
         <Card pontos={100} participante={"Jean Ramalho"}/>
         <Card pontos={90} participante={"Victor Silva"}/>
         <Card pontos={80} participante={"Carol Deó"}/>
-        <TouchableOpacity style={styles.botao}>
+        <TouchableOpacity style={styles.botao} onPress={openRanking}>
                     <Text style={styles.textBotao}>Ver Ranking Completo</Text>
         </TouchableOpacity>
       </View>
@@ -25,7 +32,7 @@ const Ranking = ({tipo}) => {
         <Card pontos={100} participante={"Grazi"}/>
         <Card pontos={90} participante={"Neia"}/>
         <Card pontos={80} participante={"Deyse"}/>
-        <TouchableOpacity style={styles.botao}>
+        <TouchableOpacity style={styles.botao} onPress={openRanking}>
                     <Text style={styles.textBotao}>Ver Ranking Completo</Text>
         </TouchableOpacity>
       </View>

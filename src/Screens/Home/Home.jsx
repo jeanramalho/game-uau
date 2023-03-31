@@ -1,14 +1,21 @@
-import { Text, View } from 'react-native'
+import { Text, View, Button } from 'react-native'
 import React, { Component } from 'react'
-import Main from '../../Components/Main'
+import {Main} from '../../Components/Main'
 
 
-export class Home extends Component {
-  render() {
+export function Home ({ navigation }) {
+
+  
+ 
     return (
-       <Main />
+      <View>
+        <Button title="Teste" /> 
+        <Main nav={navigation} />
+        
+      </View>
+       
     )
-  }
+
 }
 
 export default Home

@@ -5,20 +5,19 @@ import Ranking from '../Ranking'
 import styles from './style'
 
 
-export class Home extends Component {
-  render() {
+export const Main = ({nav}) => {
+
     return (
       <View style={styles.container}>
         <Header />
         
         <View style={styles.rankings}>  
-          <Ranking tipo="lid" />
-          <Ranking tipo="classe" />
+          <Ranking tipo="lid" nav={nav}/>
+          <Ranking tipo="classe" nav={nav}/>
         </View>
         
       </View>
     )
   }
-}
 
-export default Home
+
