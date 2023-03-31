@@ -1,6 +1,6 @@
 import { Text, View } from 'react-native'
 import React, { Component } from 'react'
-import  Routes  from '../../Routes'
+import  {Routes}  from '../../Routes'
 import styles from './style'
 
 
