@@ -1,8 +1,7 @@
 import { Text, View } from 'react-native'
 import React, { Component } from 'react'
-import Header from '../Header/'
-import Input from '../Input/'
-import Ranking from '../Ranking/'
+import Header from '../../Components/Header'
+import Ranking from '../../Components/Ranking'
 import styles from './style'
 
 
