@@ -1,4 +1,4 @@
-import { Text, View, Button } from 'react-native'
+import {  View,  } from 'react-native'
 import React, { Component } from 'react'
 import {Main} from '../../Components/Main'
 
@@ -9,9 +9,7 @@ export function Home ({ navigation }) {
  
     return (
       <View>
-        <Button title="Teste" /> 
-        <Main nav={navigation} />
-        
+        <Main nav={navigation} />        
       </View>
        
     )
