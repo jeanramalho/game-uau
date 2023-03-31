@@ -6,7 +6,7 @@ import { useNavigation } from '@react-navigation/native'
 
 
 
-const Ranking = ({tipo, nav}) => {
+const Ranking = ({tipo}) => {
   const navigation = useNavigation()
 
   function openRanking(){
