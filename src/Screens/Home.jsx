@@ -6,7 +6,7 @@ import Ranking from '../Ranking/'
 import styles from './style'
 
 
-export class index extends Component {
+export class Home extends Component {
   render() {
     return (
       <View style={styles.container}>
@@ -22,4 +22,4 @@ export class index extends Component {
   }
 }
 
-export default index
+export default Home
