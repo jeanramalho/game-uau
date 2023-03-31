@@ -1,17 +1,24 @@
 import { Text, View } from 'react-native'
 import React, { Component } from 'react'
-import  {Routes}  from '../../Routes'
+import Header from '../Header'
+import Ranking from '../Ranking'
 import styles from './style'
 
 
-export class index extends Component {
+export class Home extends Component {
   render() {
     return (
       <View style={styles.container}>
-       <Routes />        
+        <Header />
+        
+        <View style={styles.rankings}>  
+          <Ranking tipo="lid" />
+          <Ranking tipo="classe" />
+        </View>
+        
       </View>
     )
   }
 }
 
-export default index
+export default Home

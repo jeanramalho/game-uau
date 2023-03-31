@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Main from './src/Components/Main'
+import { Routes } from './src/Routes';
 
 
 
@@ -9,7 +10,7 @@ import Main from './src/Components/Main'
 export default function App() {
   return (
     <View style={styles.container}>
-      <Main />
+      <Routes />
     </View>
   );
 }
