@@ -12,7 +12,7 @@ export function StackRoutes(){
               component={Home}
             />
 
-        <Screen
+            <Screen
               name="CompleteRanking"  
               component={CompleteRanking}
             />
