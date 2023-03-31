@@ -3,13 +3,13 @@ import React, { Component } from 'react'
 import {Main} from '../../Components/Main'
 
 
-export function Home ({ navigation }) {
+export function Home () {
 
   
  
     return (
       <View>
-        <Main nav={navigation} />        
+        <Main />        
       </View>
        
     )

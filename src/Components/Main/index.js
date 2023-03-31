@@ -5,15 +5,15 @@ import Ranking from '../Ranking'
 import styles from './style'
 
 
-export const Main = ({nav}) => {
+export const Main = () => {
 
     return (
       <View style={styles.container}>
         <Header />
         
         <View style={styles.rankings}>  
-          <Ranking tipo="lid" nav={nav}/>
-          <Ranking tipo="classe" nav={nav}/>
+          <Ranking tipo="lid" />
+          <Ranking tipo="classe" />
         </View>
         
       </View>

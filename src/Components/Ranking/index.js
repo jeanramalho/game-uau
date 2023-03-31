@@ -2,16 +2,18 @@ import {Text, View, Button, TouchableOpacity } from 'react-native'
 import React, { Component } from 'react'
 import styles from "./style"
 import Card from "../Card"
+import { useNavigation } from '@react-navigation/native'
 
 
 
 const Ranking = ({tipo, nav}) => {
+  const navigation = useNavigation()
 
   function openRanking(){
     if(tipo == 'lid'){
-      nav.navigate('CompleteRanking')
+      navigation.navigate('CompleteRanking')
     } else if (tipo == 'classe') {
-      nav.navigate('CompleteRankingClasse')
+      navigation.navigate('CompleteRankingClasse')
     }    
   }
 
