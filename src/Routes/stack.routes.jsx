@@ -1,7 +1,7 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import  {Home}  from '../Screens/Home/Home'
 import {CompleteRanking} from '../Screens/CompleteRanking/CompleteRanking';
-import {CompleteRankingClasse} from '../Screens/CompleteRankingClasse/CompleteRanking'
+import {CompleteRankingClasse} from '../Screens/CompleteRankingClasse/CompleteRankingClasse'
 
 
 const { Screen, Navigator } = createNativeStackNavigator();

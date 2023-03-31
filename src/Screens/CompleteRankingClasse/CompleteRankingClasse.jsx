@@ -5,7 +5,7 @@ import styles from './style'
 
 
 
-export class CompleteRanking extends Component {
+export class CompleteRankingClasse extends Component {
   render() {
     return (
       <View style={styles.container}>
@@ -16,4 +16,4 @@ export class CompleteRanking extends Component {
   }
 }
 
-export default CompleteRanking
+export default CompleteRankingClasse

@@ -7,12 +7,17 @@ import Card from "../Card"
 
 const Ranking = ({tipo, nav}) => {
 
- 
+  function openRanking(){
+    if(tipo == 'lid'){
+      nav.navigate('CompleteRanking')
+    } else if (tipo == 'classe') {
+      nav.navigate('CompleteRankingClasse')
+    }    
+  }
 
   if(tipo == "lid") {
-    function openRanking(){
-      nav.navigate('CompleteRanking')
-    }
+
+   
 
     return (
       <View style={styles.container}>
