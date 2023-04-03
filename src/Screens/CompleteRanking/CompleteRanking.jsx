@@ -5,16 +5,21 @@ import styles from './style'
 import Card from '../../Components/Card'
 
 
-export class CompleteRanking extends Component {
-  render() {
+const CompleteRanking = () => {
+  function cards( {
+    fo
+  })
+
+ 
     return (
       <View style={styles.container}>
         <Header />       
         <Text style={styles.title}>Ranking Liderança</Text>
+        
 
       </View>
     )
-  }
+  
 }
 
 export default CompleteRanking
