@@ -29,6 +29,7 @@ const styles = StyleSheet.create({
     rankingContainer:{
         width: "90%",
         padding: 10,
+        paddingTop:10,
         marginTop: 10,
         backgroundColor: "#cecece",
         borderRadius: 8,
