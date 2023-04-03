@@ -13,6 +13,12 @@ const styles = StyleSheet.create({
         height: "80%",
         alignItems: "center",
         justifyContent: "space-evenly",
+    },
+
+    title: {
+        width: "100%",
+        fontSize: 20,
+        fontWeight: "bolder",
     }
 
  
