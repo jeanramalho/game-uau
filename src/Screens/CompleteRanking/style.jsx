@@ -24,7 +24,17 @@ const styles = StyleSheet.create({
         textAlign: "center",
         marginTop: 20,
         marginBottom: 20,
-    }
+    },
+
+    rankingContainer:{
+        width: "90%",
+        padding: 10,
+        marginTop: 10,
+        backgroundColor: "#cecece",
+        borderRadius: 8,
+        justifyContent: "center",
+        alignItems: "center",
+    },
 
  
 })

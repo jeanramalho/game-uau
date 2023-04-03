@@ -13,7 +13,7 @@ const CompleteRanking = () => {
       <View style={styles.container}>
         <Header />       
         <Text style={styles.title}>Ranking Liderança</Text>
-        <View>               
+        <View style={styles.rankingContainer}>               
           <Card pontos={100} participante={"Jean Ramalho"}/>
           <Card pontos={90} participante={"Victor Silva"}/>
           <Card pontos={80} participante={"Carol Deó"}/>
