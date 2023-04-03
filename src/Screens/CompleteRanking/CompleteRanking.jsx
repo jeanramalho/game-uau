@@ -6,16 +6,33 @@ import Card from '../../Components/Card'
 
 
 const CompleteRanking = () => {
-  function cards( {
-    fo
-  })
+  
 
  
     return (
       <View style={styles.container}>
         <Header />       
         <Text style={styles.title}>Ranking Liderança</Text>
-        
+        <View>               
+          <Card pontos={100} participante={"Jean Ramalho"}/>
+          <Card pontos={90} participante={"Victor Silva"}/>
+          <Card pontos={80} participante={"Carol Deó"}/>
+          <Card pontos={100} participante={"Jean Ramalho"}/>
+          <Card pontos={90} participante={"Victor Silva"}/>
+          <Card pontos={80} participante={"Carol Deó"}/>
+          <Card pontos={100} participante={"Jean Ramalho"}/>
+          <Card pontos={90} participante={"Victor Silva"}/>
+          <Card pontos={80} participante={"Carol Deó"}/>
+          <Card pontos={100} participante={"Jean Ramalho"}/>
+          <Card pontos={90} participante={"Victor Silva"}/>
+          <Card pontos={80} participante={"Carol Deó"}/>
+          <Card pontos={100} participante={"Jean Ramalho"}/>
+          <Card pontos={90} participante={"Victor Silva"}/>
+          <Card pontos={80} participante={"Carol Deó"}/>
+          <Card pontos={100} participante={"Jean Ramalho"}/>
+          <Card pontos={90} participante={"Victor Silva"}/>
+          <Card pontos={80} participante={"Carol Deó"}/>
+        </View>
 
       </View>
     )
