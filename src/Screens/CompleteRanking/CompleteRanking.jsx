@@ -2,7 +2,7 @@ import { Text, View } from 'react-native'
 import React, { Component } from 'react'
 import Header from '../../Components/Header'
 import styles from './style'
-
+import Card from '../../Components/Card'
 
 
 export class CompleteRanking extends Component {
