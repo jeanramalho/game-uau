@@ -10,6 +10,7 @@ export class CompleteRanking extends Component {
     return (
       <View style={styles.container}>
         <Header />       
+        <Text>Ranking Liderança</Text>
       </View>
     )
   }
