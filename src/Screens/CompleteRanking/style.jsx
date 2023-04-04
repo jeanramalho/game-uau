@@ -37,6 +37,10 @@ const styles = StyleSheet.create({
         alignItems: "center",
     },
 
+    scrollContainer: {
+        width: "100%"
+    }
+
  
 })
 

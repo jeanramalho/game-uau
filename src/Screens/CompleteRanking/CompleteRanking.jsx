@@ -11,7 +11,7 @@ const CompleteRanking = () => {
  
     return (
       <View style={styles.container}>
-        <ScrollView>
+        <ScrollView style={styles.scrollContainer}>
           <Header />       
           <Text style={styles.title}>Ranking Liderança</Text>
           <View style={styles.rankingContainer}>               
