@@ -13,6 +13,10 @@ const styles = StyleSheet.create({
         height: "80%",
         alignItems: "center",
         justifyContent: "space-evenly",
+    },
+
+    scrollMain: {
+        width: "100%",
     }
 
  
