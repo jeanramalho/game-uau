@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
 
     rankings: {
         width: "100%",
-        height: "80%",
+        height: "100%",
         alignItems: "center",
         justifyContent: "space-evenly",
     },
