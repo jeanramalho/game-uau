@@ -1,4 +1,4 @@
-import { Text, View } from 'react-native'
+import { Text, View, ScrollView } from 'react-native'
 import React, { Component } from 'react'
 import Header from '../../Components/Header'
 import styles from './style'
@@ -11,29 +11,32 @@ const CompleteRankingClasse = () => {
  
     return (
       <View style={styles.container}>
-        <Header />       
-        <Text style={styles.title}>Ranking Classe</Text>
-        <View style={styles.rankingContainer}>               
-          <Card pontos={100} participante={"Jean Ramalho"}/>
-          <Card pontos={90} participante={"Victor Silva"}/>
-          <Card pontos={80} participante={"Carol Deó"}/>
-          <Card pontos={100} participante={"Jean Ramalho"}/>
-          <Card pontos={90} participante={"Victor Silva"}/>
-          <Card pontos={80} participante={"Carol Deó"}/>
-          <Card pontos={100} participante={"Jean Ramalho"}/>
-          <Card pontos={90} participante={"Victor Silva"}/>
-          <Card pontos={80} participante={"Carol Deó"}/>
-          <Card pontos={100} participante={"Jean Ramalho"}/>
-          <Card pontos={90} participante={"Victor Silva"}/>
-          <Card pontos={80} participante={"Carol Deó"}/>
-          <Card pontos={100} participante={"Jean Ramalho"}/>
-          <Card pontos={90} participante={"Victor Silva"}/>
-          <Card pontos={80} participante={"Carol Deó"}/>
-          <Card pontos={100} participante={"Jean Ramalho"}/>
-          <Card pontos={90} participante={"Victor Silva"}/>
-          <Card pontos={80} participante={"Carol Deó"}/>
-        </View>
-
+          <Header />    
+            <ScrollView style={styles.scrollContainer}>
+              <View style={styles.container}>                       
+                  <Text style={styles.title}>Ranking Classe</Text>
+                  <View style={styles.rankingContainer}>               
+                    <Card pontos={100} participante={"Jean Ramalho"}/>
+                    <Card pontos={90} participante={"Victor Silva"}/>
+                    <Card pontos={80} participante={"Carol Deó"}/>
+                    <Card pontos={100} participante={"Jean Ramalho"}/>
+                    <Card pontos={90} participante={"Victor Silva"}/>
+                    <Card pontos={80} participante={"Carol Deó"}/>
+                    <Card pontos={100} participante={"Jean Ramalho"}/>
+                    <Card pontos={90} participante={"Victor Silva"}/>
+                    <Card pontos={80} participante={"Carol Deó"}/>
+                    <Card pontos={100} participante={"Jean Ramalho"}/>
+                    <Card pontos={90} participante={"Victor Silva"}/>
+                    <Card pontos={80} participante={"Carol Deó"}/>
+                    <Card pontos={100} participante={"Jean Ramalho"}/>
+                    <Card pontos={90} participante={"Victor Silva"}/>
+                    <Card pontos={80} participante={"Carol Deó"}/>
+                    <Card pontos={100} participante={"Jean Ramalho"}/>
+                    <Card pontos={90} participante={"Victor Silva"}/>
+                    <Card pontos={80} participante={"Carol Deó"}/>
+                  </View>       
+              </View>
+            </ScrollView>
       </View>
     )
   
