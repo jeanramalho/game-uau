@@ -38,10 +38,8 @@ const styles = StyleSheet.create({
     },
 
     scrollContainer: {
-        width: "100%"
-    }
-
- 
+        width: "100%",
+    },
 })
 
 export default styles
