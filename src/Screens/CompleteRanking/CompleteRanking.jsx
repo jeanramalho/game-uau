@@ -1,4 +1,4 @@
-import { Text, View } from 'react-native'
+import { Text, View, ScrollView } from 'react-native'
 import React, { Component } from 'react'
 import Header from '../../Components/Header'
 import styles from './style'
@@ -11,6 +11,7 @@ const CompleteRanking = () => {
  
     return (
       <View style={styles.container}>
+        
         <Header />       
         <Text style={styles.title}>Ranking Liderança</Text>
         <View style={styles.rankingContainer}>               
