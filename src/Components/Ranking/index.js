@@ -7,8 +7,8 @@ import { gql, useQuery } from "@apollo/client"
 
 
 const getPartLid = gql`
- query Myquery {
-  participantes(where: {escopo: "lid"}, orderBy: pontos_DESC, first: 3) {
+ query Myquery ($escopo: str) {
+  participantes(where: {escopo: $escopo}, orderBy: pontos_DESC, first: 3) {
     nome
     pontos
     escopo
