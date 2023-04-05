@@ -6,7 +6,7 @@ import { useNavigation } from '@react-navigation/native'
 import { gql, useQuery } from "@apollo/client"
 
 
-const getPartLid = gql`
+const getPart = gql`
  query Myquery ($escopo: String) {
   participantes(where: {escopo: $escopo}, orderBy: pontos_DESC, first: 3) {
     nome
@@ -14,15 +14,33 @@ const getPartLid = gql`
     escopo
   }
 }
+`
 
+
+const getPartFull = gql`
+ query Myquery ($escopo: String) {
+  participantes(where: {escopo: $escopo}, orderBy: pontos_DESC) {
+    nome
+    pontos
+    escopo
+  }
+}
 `
 
 
 
-const Ranking = ({tipo}) => {
+const Ranking = ({tipo, status}) => {
+  let myQuery = ''
 
-  const {loading, error, data } = useQuery(getPartLid, { variables: { escopo: tipo } })
-  if (loading)  return  <Text>Loading...</Text>
+  if (status == "top3") {
+    myQuery = getPart
+  } else if (status == "completo") {
+    myQuery = getPartFull
+  }
+
+    const {loading, error, data } = useQuery(myQuery, { variables: { escopo: tipo } })
+    if (loading)  {return  <Text>Loading...</Text>}
+  
 
   const navigation = useNavigation()
 

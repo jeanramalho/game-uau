@@ -7,6 +7,7 @@ import { ApolloProvider } from '@apollo/client'
 import { client } from '../../Lib/apollo'
 
 
+
 export const Main = () => {
 
     return (
@@ -17,8 +18,8 @@ export const Main = () => {
               <Header />
               
               <View style={styles.rankings}>  
-                <Ranking tipo="lid" />
-                <Ranking tipo="classe" />
+                <Ranking tipo="lid" status="top3"/>
+                <Ranking tipo="classe" status="top3"/>
               </View>
               
             </View>

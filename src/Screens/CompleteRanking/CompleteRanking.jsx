@@ -7,11 +7,20 @@ import { ApolloProvider } from '@apollo/client'
 import { client } from '../../Lib/apollo'
 import { gql, useQuery } from "@apollo/client"
 
-
+const getPartLid = gql`
+query Myquery {
+  participantes(where: {escopo: "lid"}, orderBy: pontos_DESC) {
+    nome
+    pontos
+    escopo
+  }
+}
+`
 
 const CompleteRanking = () => {
   
-
+  const {loading, error, data } = useQuery(getPartLid)
+  if (loading)  return  <Text>Loading...</Text>
  
     return (
       <ApolloProvider client={client}>
