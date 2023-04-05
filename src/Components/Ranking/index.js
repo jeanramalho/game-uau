@@ -19,6 +19,10 @@ const getPartLid = gql`
 
 
 const Ranking = ({tipo}) => {
+
+  const {loading, error, data } = useQuery(getPartLid)
+  if (loading)  return  "Loading..."
+
   const navigation = useNavigation()
 
   function openRanking(){
