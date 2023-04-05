@@ -20,7 +20,7 @@ const CompleteRanking = () => {
         <Header />
         <ScrollView style={styles.scrollContainer}>
           <View style={styles.container}>
-            <Ranking tipo="classe" status="completo" />           
+            <Ranking tipo="classe" status="completo" page="rank"/>           
           </View>
         </ScrollView>
       </View>

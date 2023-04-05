@@ -29,7 +29,7 @@ const getPartFull = gql`
 
 
 
-const Ranking = ({tipo, status}) => {
+const Ranking = ({tipo, status, page}) => {
   let myQuery = ''
 
   if (status == "top3") {
@@ -44,12 +44,28 @@ const Ranking = ({tipo, status}) => {
 
   const navigation = useNavigation()
 
+  var titleButton = ""
+
+  if (page == 'home') {
+    titleButton = "Ver Ranking Completo"
+  } else {
+    titleButton = "Início"
+  }
+  
+
   function openRanking(){
-    if(tipo == 'lid'){
+    
+    if(tipo == 'lid' && page == 'home'){
+    
       navigation.navigate('CompleteRanking')
-    } else if (tipo == 'classe') {
+      
+    } else if (tipo == 'classe' && page == 'home')   {
       navigation.navigate('CompleteRankingClasse')
-    }    
+    
+    } else  {
+      navigation.navigate('Home')
+   
+    }
   }
 
   if(tipo == "lid") {
@@ -67,7 +83,7 @@ const Ranking = ({tipo, status}) => {
           )
         })}
         <TouchableOpacity style={styles.botao} onPress={openRanking}>
-                    <Text style={styles.textBotao}>Ver Ranking Completo</Text>
+                    <Text style={styles.textBotao}>{titleButton}</Text>
         </TouchableOpacity>
       </View>
     )
@@ -81,7 +97,7 @@ const Ranking = ({tipo, status}) => {
           )
         })}
         <TouchableOpacity style={styles.botao} onPress={openRanking}>
-                    <Text style={styles.textBotao}>Ver Ranking Completo</Text>
+                    <Text style={styles.textBotao}>{titleButton}</Text>
         </TouchableOpacity>
       </View>
     )
