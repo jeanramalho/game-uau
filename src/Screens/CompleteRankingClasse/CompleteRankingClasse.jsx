@@ -3,26 +3,31 @@ import React, { Component } from 'react'
 import Header from '../../Components/Header'
 import styles from './style'
 import Card from '../../Components/Card'
+import Ranking from '../../Components/Ranking'
+import { ApolloProvider } from '@apollo/client'
+import { client } from '../../Lib/apollo'
 
 
-const CompleteRankingClasse = () => {
-  
 
- 
-    return (
+const CompleteRanking = () => {
+
+
+
+  return (
+    <ApolloProvider client={client}>
+
       <View style={styles.container}>
-          <Header />    
-            <ScrollView style={styles.scrollContainer}>
-              <View style={styles.container}>                       
-                  <Text style={styles.title}>Ranking Classe</Text>
-                  <View style={styles.rankingContainer}>               
-               
-                  </View>       
-              </View>
-            </ScrollView>
+        <Header />
+        <ScrollView style={styles.scrollContainer}>
+          <View style={styles.container}>
+            <Ranking tipo="classe" status="completo" />           
+          </View>
+        </ScrollView>
       </View>
-    )
-  
+
+    </ApolloProvider>
+  )
+
 }
 
-export default CompleteRankingClasse
+export default CompleteRanking

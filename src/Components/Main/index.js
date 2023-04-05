@@ -18,8 +18,8 @@ export const Main = () => {
               <Header />
               
               <View style={styles.rankings}>  
-                <Ranking tipo="lid" status="top3"/>
-                <Ranking tipo="classe" status="top3"/>
+                <Ranking tipo="lid" status="top3" page="home"/>
+                <Ranking tipo="classe" status="top3" page="home"/>
               </View>
               
             </View>
