@@ -57,9 +57,11 @@ const Ranking = ({tipo}) => {
     return (
       <View style={styles.container}>
         <Text style={styles.title}> Ranking Classe</Text>
-        <Card pontos={100} participante={"Grazi"}/>
-        <Card pontos={90} participante={"Neia"}/>
-        <Card pontos={80} participante={"Deyse"}/>
+        {data.participantes.map(participante => {
+          return (
+            <Card participante={participante.nome} pontos={participante.pontos} />
+          )
+        })}
         <TouchableOpacity style={styles.botao} onPress={openRanking}>
                     <Text style={styles.textBotao}>Ver Ranking Completo</Text>
         </TouchableOpacity>
