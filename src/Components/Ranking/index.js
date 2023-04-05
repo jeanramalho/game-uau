@@ -40,9 +40,13 @@ const Ranking = ({tipo}) => {
     return (
       
       <View style={styles.container}>
-        {console.log({data})}
+      
         <Text style={styles.title}> Ranking Liderança</Text>
-          <Text>{data}</Text>
+        {data.participantes.map(participante => {
+          return (
+            <Card participante={participante.nome} pontos={participante.pontos} />
+          )
+        })}
         <TouchableOpacity style={styles.botao} onPress={openRanking}>
                     <Text style={styles.textBotao}>Ver Ranking Completo</Text>
         </TouchableOpacity>
