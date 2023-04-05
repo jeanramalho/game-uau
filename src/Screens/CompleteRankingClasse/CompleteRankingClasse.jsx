@@ -16,24 +16,7 @@ const CompleteRankingClasse = () => {
               <View style={styles.container}>                       
                   <Text style={styles.title}>Ranking Classe</Text>
                   <View style={styles.rankingContainer}>               
-                    <Card pontos={100} participante={"Jean Ramalho"}/>
-                    <Card pontos={90} participante={"Victor Silva"}/>
-                    <Card pontos={80} participante={"Carol Deó"}/>
-                    <Card pontos={100} participante={"Jean Ramalho"}/>
-                    <Card pontos={90} participante={"Victor Silva"}/>
-                    <Card pontos={80} participante={"Carol Deó"}/>
-                    <Card pontos={100} participante={"Jean Ramalho"}/>
-                    <Card pontos={90} participante={"Victor Silva"}/>
-                    <Card pontos={80} participante={"Carol Deó"}/>
-                    <Card pontos={100} participante={"Jean Ramalho"}/>
-                    <Card pontos={90} participante={"Victor Silva"}/>
-                    <Card pontos={80} participante={"Carol Deó"}/>
-                    <Card pontos={100} participante={"Jean Ramalho"}/>
-                    <Card pontos={90} participante={"Victor Silva"}/>
-                    <Card pontos={80} participante={"Carol Deó"}/>
-                    <Card pontos={100} participante={"Jean Ramalho"}/>
-                    <Card pontos={90} participante={"Victor Silva"}/>
-                    <Card pontos={80} participante={"Carol Deó"}/>
+               
                   </View>       
               </View>
             </ScrollView>
