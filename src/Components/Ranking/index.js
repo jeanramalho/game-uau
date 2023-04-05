@@ -6,7 +6,15 @@ import { useNavigation } from '@react-navigation/native'
 import { gql, useQuery } from "@apollo/client"
 
 
-
+const getPartLid = gql`
+  query MyQuery {
+    participantes {
+      nome
+      pontos
+      escopo
+    }
+  }
+`
 
 
 
