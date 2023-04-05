@@ -7,7 +7,7 @@ import { gql, useQuery } from "@apollo/client"
 
 
 const getPartLid = gql`
-  query MyQuery {
+  query Myquery {
     participantes {
       nome
       pontos
@@ -21,7 +21,7 @@ const getPartLid = gql`
 const Ranking = ({tipo}) => {
 
   const {loading, error, data } = useQuery(getPartLid)
-  if (loading)  return  "Loading..."
+  if (loading)  return  <Text>Loading...</Text>
 
   const navigation = useNavigation()
 
@@ -38,15 +38,11 @@ const Ranking = ({tipo}) => {
    
 
     return (
+      
       <View style={styles.container}>
+        {console.log({data})}
         <Text style={styles.title}> Ranking Liderança</Text>
-          {data.participantes.map(participante => {
-            return (
-              <>
-                <Card participante={participante.nome} pontos={participante.pontos} />
-              </>
-            )
-          })}
+          <Text>{data}</Text>
         <TouchableOpacity style={styles.botao} onPress={openRanking}>
                     <Text style={styles.textBotao}>Ver Ranking Completo</Text>
         </TouchableOpacity>
