@@ -7,7 +7,7 @@ import { gql, useQuery } from "@apollo/client"
 
 
 const getPartLid = gql`
- query Myquery ($escopo: str) {
+ query Myquery ($escopo: String) {
   participantes(where: {escopo: $escopo}, orderBy: pontos_DESC, first: 3) {
     nome
     pontos
@@ -21,7 +21,7 @@ const getPartLid = gql`
 
 const Ranking = ({tipo}) => {
 
-  const {loading, error, data } = useQuery(getPartLid)
+  const {loading, error, data } = useQuery(getPartLid, { variables: { escopo: tipo } })
   if (loading)  return  <Text>Loading...</Text>
 
   const navigation = useNavigation()
