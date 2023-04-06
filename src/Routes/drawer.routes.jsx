@@ -11,25 +11,16 @@ export function DrawerRoutes(){
         <Navigator>
             <Screen
               name='Home'  
-              options={{
-                headerShown: false,
-              }}
               component={Home}
             />
 
             <Screen
               name='CompleteRanking'  
-              options={{
-                headerShown: false,
-              }}
               component={CompleteRanking}
             />
 
             <Screen
               name='CompleteRankingClasse'  
-              options={{
-                headerShown: false,
-              }}
               component={CompleteRankingClasse}
             />
         </Navigator>
