@@ -9,6 +9,7 @@ const { Screen, Navigator } = createNativeStackNavigator();
 export function StackRoutes(){
     return (
         <Navigator>
+          
             <Screen
               name='Home'  
               options={{

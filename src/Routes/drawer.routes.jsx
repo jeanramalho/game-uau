@@ -7,9 +7,11 @@ import { MaterialIcons } from '@expo/vector-icons'
 
 const { Screen, Navigator } = createDrawerNavigator();
 
+
 export function DrawerRoutes(){
     return (
         <Navigator>
+            
             <Screen
               name='Home'  
               component={Home}
@@ -17,26 +19,79 @@ export function DrawerRoutes(){
                 drawerLabel: "Início",
                 drawerIcon: () => <MaterialIcons  name="home" size={22} />,
                 headerStyle: {
-                    backgroundColor: '#00cccc',
-                    marginBottom: 0,
+                    backgroundColor: "#00cccc",
+                    height: 120,
+                    marginTop: 0,
+                    paddingTop: 0,
                     justifyContent: "center",
                     alignItems: "center",
+                    textAlign: "center",
                   },
                 headerTintColor: '#fff',
                 headerTitle: "Game UAU",
-
-                
+                headerTitleAlign: 'center',
+                headerTitleStyle: {
+                    fontSize: 30,
+                    fontWeight: 600, 
+                    color: "#fff", 
+                }
+                                
               }}
+              
             />
 
             <Screen
               name='CompleteRanking'  
               component={CompleteRanking}
+              options={{
+                drawerLabel: "Ranking Completo Liderança",
+                drawerIcon: () => <MaterialIcons  name="home" size={22} />,
+                headerStyle: {
+                    backgroundColor: "#00cccc",
+                    height: 120,
+                    marginTop: 0,
+                    paddingTop: 0,
+                    justifyContent: "center",
+                    alignItems: "center",
+                    textAlign: "center",
+                  },
+                headerTintColor: '#fff',
+                headerTitle: "Game UAU",
+                headerTitleAlign: 'center',
+                headerTitleStyle: {
+                    fontSize: 30,
+                    fontWeight: 600, 
+                    color: "#fff", 
+                }
+                                
+              }}
             />
 
             <Screen
               name='CompleteRankingClasse'  
               component={CompleteRankingClasse}
+              options={{
+                drawerLabel: "Ranking Completo Classe",
+                drawerIcon: () => <MaterialIcons  name="home" size={22} />,
+                headerStyle: {
+                    backgroundColor: "#00cccc",
+                    height: 120,
+                    marginTop: 0,
+                    paddingTop: 0,
+                    justifyContent: "center",
+                    alignItems: "center",
+                    textAlign: "center",
+                  },
+                headerTintColor: '#fff',
+                headerTitle: "Game UAU",
+                headerTitleAlign: 'center',
+                headerTitleStyle: {
+                    fontSize: 30,
+                    fontWeight: 600, 
+                    color: "#fff", 
+                }
+                                
+              }}
             />
         </Navigator>
     )
