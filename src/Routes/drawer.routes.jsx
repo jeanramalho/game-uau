@@ -15,7 +15,17 @@ export function DrawerRoutes(){
               component={Home}
               options={{
                 drawerLabel: "Início",
-                drawerIcon: () => <MaterialIcons  name="home" size={22} />
+                drawerIcon: () => <MaterialIcons  name="home" size={22} />,
+                headerStyle: {
+                    backgroundColor: '#00cccc',
+                    marginBottom: 0,
+                    justifyContent: "center",
+                    alignItems: "center",
+                  },
+                headerTintColor: '#fff',
+                headerTitle: "Game UAU",
+
+                
               }}
             />
 

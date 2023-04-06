@@ -6,6 +6,7 @@ const styles = StyleSheet.create({
         height: "100%",
         paddingTop: 10,
         alignItems: "center",
+        flex: ','
     },
 
     rankings: {
