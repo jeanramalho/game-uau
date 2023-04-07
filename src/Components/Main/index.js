@@ -15,7 +15,6 @@ export const Main = () => {
           <View style={styles.container}>
             
             <View style={styles.container}>
-              <Header />
               
               <View style={styles.rankings}>  
                 <Ranking tipo="lid" status="top3" page="home"/>
