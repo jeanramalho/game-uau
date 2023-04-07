@@ -1,6 +1,5 @@
 import { Text, View, ScrollView } from 'react-native'
 import React, { Component } from 'react'
-import Header from '../../Components/Header'
 import styles from './style'
 import Card from '../../Components/Card'
 import Ranking from '../../Components/Ranking'
@@ -17,7 +16,6 @@ const CompleteRanking = () => {
     <ApolloProvider client={client}>
 
       <View style={styles.container}>
-        <Header />
         <ScrollView style={styles.scrollContainer}>
           <View style={styles.container}>
             <Ranking tipo="classe" status="completo" page="rank"/>           
