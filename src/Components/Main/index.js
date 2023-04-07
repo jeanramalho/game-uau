@@ -1,6 +1,5 @@
 import { Text, View } from 'react-native'
 import React, { Component } from 'react'
-import Header from '../Header'
 import Ranking from '../Ranking'
 import styles from './style'
 import { ApolloProvider } from '@apollo/client'
