@@ -75,7 +75,6 @@ export function DrawerRoutes(){
                 drawerLabelStyle: {
                   display: "none",
                 },
-                drawerIcon: () => <MaterialIcons  name="home" size={22} />,
                 headerStyle: {
                     backgroundColor: "#00cccc",
                     height: 120,
