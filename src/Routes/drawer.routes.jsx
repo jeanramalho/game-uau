@@ -71,10 +71,7 @@ export function DrawerRoutes(){
               name='CompleteRankingClasse'  
               component={CompleteRankingClasse}
               options={{
-                drawerLabel: "Ranking Completo Classe",
-                drawerLabelStyle: {
-                  display: "none",
-                },
+                drawerLabel: () => null,
                 headerStyle: {
                     backgroundColor: "#00cccc",
                     height: 120,
