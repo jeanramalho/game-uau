@@ -44,8 +44,8 @@ export function DrawerRoutes(){
               name='CompleteRanking'  
               component={CompleteRanking}
               options={{
-                drawerLabel: "Ranking Completo Liderança",
-                drawerIcon: () => <MaterialIcons  name="home" size={22} />,
+                drawerLabel: () => null,
+                drawerItemStyle: { height: 0 },
                 headerStyle: {
                     backgroundColor: "#00cccc",
                     height: 120,
