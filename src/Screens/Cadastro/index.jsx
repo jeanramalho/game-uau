@@ -15,6 +15,7 @@ const Cadastro = () => {
     <ApolloProvider client={client}>
 
       <View style={styles.container}>    
+
         <Text>Nome do Gamer</Text>
         <TextInput 
         style={styles.nomeInput}
@@ -22,6 +23,7 @@ const Cadastro = () => {
         value={text}
         placeholder='Digite nome do novo gamer'
         />
+
         <Text>Pontuação inicial</Text>
         <TextInput 
         style={styles.nomeInput}
@@ -30,6 +32,7 @@ const Cadastro = () => {
         placeholder='Pontuação inicial'
         keyboardType='numeric'
         />
+        
       </View>
 
     </ApolloProvider>
