@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import styles from './style'
 import { ApolloProvider } from '@apollo/client'
 import { client } from '../../Lib/apollo'
-import { gql, useQuery } from "@apollo/client"
+
 
 
 
@@ -34,12 +34,7 @@ const Cadastro = () => {
         keyboardType='numeric'
         />
 
-        <Picker
-        selectedValue={this.state.selectedValue}
-        onValueChange={(itemValue, itemIndex) => this.setState({selectedValue: itemValue})}>
-         <Picker.Item label="Liderança" value="lid" />
-          <Picker.Item label="Classe" value="classe" />
-        </Picker>
+        
 
 
       </View>
