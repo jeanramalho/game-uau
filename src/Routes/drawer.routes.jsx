@@ -99,7 +99,7 @@ export function DrawerRoutes(){
               name='Cadastro'  
               component={Cadastro}
               options={{
-                drawerLabel: "Cadastro",
+                drawerLabel: "Novo Gamer",
                 drawerIcon: () => <MaterialIcons  name="add" size={22} />,
                 headerStyle: {
                     backgroundColor: "#00cccc",
