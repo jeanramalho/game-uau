@@ -1,4 +1,4 @@
-import { Text, View, ScrollView, TextInput } from 'react-native'
+import { Text, View, ScrollView, TextInput, TouchableOpacity } from 'react-native'
 import React, { Component } from 'react'
 import styles from './style'
 import { ApolloProvider } from '@apollo/client'
@@ -42,11 +42,13 @@ const Cadastro = () => {
         onValueChange={(itemValue, itemIndex) =>
             selectedEscopo(itemValue)
         }>
-        <Picker.Item label="Liderança" value="lid" />
-        <Picker.Item label="Classe" value="classe" />
+            <Picker.Item label="Liderança" value="lid" />
+            <Picker.Item label="Classe" value="classe" />
         </Picker>
 
-        
+        <TouchableOpacity>
+            <Text>Salvar</Text>
+        </TouchableOpacity>
 
 
       </View>
