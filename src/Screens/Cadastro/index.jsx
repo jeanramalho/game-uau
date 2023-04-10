@@ -28,7 +28,7 @@ const Cadastro = () => {
         onChangeText={onChangePontos}
         value={pontos}
         placeholder='Pontuação inicial'
-        
+        keyboardType='numeric'
         />
       </View>
 
