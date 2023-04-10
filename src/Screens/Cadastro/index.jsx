@@ -14,6 +14,7 @@ const Cadastro = () => {
     <ApolloProvider client={client}>
 
       <View style={styles.container}>    
+        <Text>Nome do Gamer</Text>
         <TextInput />
       </View>
 
