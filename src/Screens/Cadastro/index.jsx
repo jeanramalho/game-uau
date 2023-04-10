@@ -1,4 +1,4 @@
-import { Text, View, ScrollView } from 'react-native'
+import { Text, View, ScrollView, TextInput } from 'react-native'
 import React, { Component } from 'react'
 import styles from './style'
 import { ApolloProvider } from '@apollo/client'
@@ -14,7 +14,7 @@ const Cadastro = () => {
     <ApolloProvider client={client}>
 
       <View style={styles.container}>    
-     
+        <TextInput />
       </View>
 
     </ApolloProvider>
