@@ -41,6 +41,7 @@ const Cadastro = () => {
         selectedValue={escopo}
         onValueChange={(itemValue, itemIndex) =>
         selectedEscopo(itemValue)
+        style={styles.selectPicker}
         }>
             <Picker.Item label="Liderança" value="lid" />
             <Picker.Item label="Classe" value="classe" />
