@@ -40,7 +40,7 @@ const Cadastro = () => {
         <Picker
         selectedValue={escopo}
         onValueChange={(itemValue, itemIndex) =>
-            selectedEscopo(itemValue)
+        selectedEscopo(itemValue)
         }>
             <Picker.Item label="Liderança" value="lid" />
             <Picker.Item label="Classe" value="classe" />
