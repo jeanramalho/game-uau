@@ -15,7 +15,8 @@ const styles = StyleSheet.create({
         },
 
         selectPicker: {
-
+            width: "70%",
+            
         }
 
 
