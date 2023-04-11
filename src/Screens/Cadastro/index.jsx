@@ -48,7 +48,7 @@ const Cadastro = () => {
         </Picker>
 
         <TouchableOpacity style={styles.botao}>
-            <Text>Salvar</Text>
+            <Text style={styles.textBotao}>Salvar</Text>
         </TouchableOpacity>
 
 
