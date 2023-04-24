@@ -15,6 +15,7 @@ const styles = StyleSheet.create({
             borderColor: "#cecece",
             borderWidth: 2,
             borderRadius: 8,
+            padding: 4,
         },
 
         selectPicker: {
