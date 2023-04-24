@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
             width: "85%",
             height: 35,
             marginTop: 10,
-            marginBottom: 10,
+            marginBottom: 20,
             borderColor: "#cecece",
             borderWidth: 2,
             borderRadius: 8,
@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
         },
 
         selectPicker: {
-            width: "70%",
+            width: "60%",
 
         },
 
