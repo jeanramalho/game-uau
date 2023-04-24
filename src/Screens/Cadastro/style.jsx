@@ -6,6 +6,8 @@ const styles = StyleSheet.create({
             width: "100%",
             padding: 15,
             marginTop: 40,
+            justifyContent: "center",
+            alignItems: "center",
         },
 
         nomeInput: {
