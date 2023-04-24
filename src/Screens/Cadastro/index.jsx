@@ -20,7 +20,7 @@ const Cadastro = () => {
 
       <View style={styles.container}>    
 
-        <Text>Nome do Gamer</Text>
+        <Text style={styles.titleInput}>Nome do Gamer</Text>
         <TextInput 
         style={styles.nomeInput}
         onChangeText={onChangeText}
@@ -28,7 +28,7 @@ const Cadastro = () => {
         placeholder='Digite nome do novo gamer'
         />
 
-        <Text>Pontuação inicial</Text>
+        <Text style={styles.titleInput}>Pontuação inicial</Text>
         <TextInput 
         style={styles.nomeInput}
         onChangeText={onChangePontos}
