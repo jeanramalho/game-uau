@@ -12,8 +12,9 @@ const styles = StyleSheet.create({
             height: 20,
             marginTop: 10,
             marginBottom: 10,
-            borderColor: "#444",
+            borderColor: "#cecece",
             borderWidth: 2,
+            borderRadius: 8,
         },
 
         selectPicker: {
