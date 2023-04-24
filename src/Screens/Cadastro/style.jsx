@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
 
         nomeInput: {
             width: "85%",
-            height: 20,
+            height: 35,
             marginTop: 10,
             marginBottom: 10,
             borderColor: "#cecece",
