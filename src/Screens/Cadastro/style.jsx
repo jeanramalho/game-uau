@@ -10,6 +10,11 @@ const styles = StyleSheet.create({
             alignItems: "center",
         },
 
+        titleInput: {
+            width: "85%",
+            textAlign: "left",
+        },
+
         nomeInput: {
             width: "85%",
             height: 35,
@@ -25,6 +30,7 @@ const styles = StyleSheet.create({
             width: "70%",
 
         },
+
 
         botao: {
             padding: 10,
