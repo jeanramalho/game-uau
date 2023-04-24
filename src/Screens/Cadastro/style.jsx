@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
             textAlign: "left",
         },
 
-        nomeInput: {
+        campoInput: {
             width: "85%",
             height: 35,
             marginTop: 10,

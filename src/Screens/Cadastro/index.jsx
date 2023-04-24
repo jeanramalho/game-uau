@@ -22,7 +22,7 @@ const Cadastro = () => {
 
         <Text style={styles.titleInput}>Nome do Gamer</Text>
         <TextInput 
-        style={styles.nomeInput}
+        style={styles.campoInput}
         onChangeText={onChangeText}
         value={text}
         placeholder='Digite nome do novo gamer'
@@ -30,7 +30,7 @@ const Cadastro = () => {
 
         <Text style={styles.titleInput}>Pontuação inicial</Text>
         <TextInput 
-        style={styles.nomeInput}
+        style={styles.campoInput}
         onChangeText={onChangePontos}
         value={pontos}
         placeholder='Pontuação inicial'
