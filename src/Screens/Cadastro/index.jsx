@@ -4,8 +4,8 @@ import styles from './style'
 import { ApolloProvider } from '@apollo/client'
 import { client } from '../../Lib/apollo'
 import {Picker} from '@react-native-picker/picker';
-import { createGamer } from './mutation'
-import { useMutation } from '@apollo/client'
+// import { createGamer } from './mutation'
+// import { useMutation } from '@apollo/client'
 
 
 
@@ -15,20 +15,20 @@ const Cadastro = () => {
     const [pontos, onChangePontos] = React.useState(0);
     const [escopo, selectedEscopo] = React.useState(0);
 
-    const [createParticipante, {}] = useMutation(createGamer)
+    // const [createParticipante, {}] = useMutation(createGamer)
 
-    function criaGamer() {
-      let nome = text
-      let pontos = pontos
-      let escopo = escopo
+    // function criaGamer() {
+    //   let nome = text
+    //   let pontos = pontos
+    //   let escopo = escopo
 
-      createParticipante({variables: {
-        nome: nome,
-        pontos: partInt(pontos),
-        escopo: escopo,
+    //   createParticipante({variables: {
+    //     nome: nome,
+    //     pontos: partInt(pontos),
+    //     escopo: escopo,
 
-      }})
-    }
+    //   }})
+    // }
 
   return (
     <ApolloProvider client={client}>
@@ -62,7 +62,7 @@ const Cadastro = () => {
             <Picker.Item label="Classe" value="classe" />
         </Picker>
 
-        <TouchableOpacity style={styles.botao} onPress={criaGamer}>
+        <TouchableOpacity style={styles.botao}>
             <Text style={styles.textBotao}>Salvar</Text>
         </TouchableOpacity>
 
