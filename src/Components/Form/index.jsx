@@ -1,37 +1,35 @@
 import { Text, View, ScrollView, TextInput, TouchableOpacity } from 'react-native'
 import React, { Component } from 'react'
 import styles from './style'
-import { ApolloProvider } from '@apollo/client'
-import { client } from '../../Lib/apollo'
 import {Picker} from '@react-native-picker/picker';
-// import { createGamer } from './mutation'
-// import { useMutation } from '@apollo/client'
+import { createGamer } from './mutation'
+import { useMutation } from '@apollo/client'
 
 
 
-const Cadastro = () => {
+const Form = () => {
 
     const [text, onChangeText] = React.useState('');
     const [pontos, onChangePontos] = React.useState(0);
     const [escopo, selectedEscopo] = React.useState(0);
 
-    // const [createParticipante, {}] = useMutation(createGamer)
+    const [createParticipante, {}] = useMutation(createGamer)
 
-    // function criaGamer() {
-    //   let nome = text
-    //   let pontos = pontos
-    //   let escopo = escopo
+    function criaGamer() {
+      let nome = text
+      let pontos = pontos
+      let escopo = escopo
 
-    //   createParticipante({variables: {
-    //     nome: nome,
-    //     pontos: partInt(pontos),
-    //     escopo: escopo,
+      createParticipante({variables: {
+        nome: nome,
+        pontos: partInt(pontos),
+        escopo: escopo,
 
-    //   }})
-    // }
+      }})
+    }
 
   return (
-    <ApolloProvider client={client}>
+
 
       <View style={styles.container}>    
 
@@ -69,9 +67,9 @@ const Cadastro = () => {
 
       </View>
 
-    </ApolloProvider>
+
   )
 
 }
 
-export default Cadastro
+export default Form
