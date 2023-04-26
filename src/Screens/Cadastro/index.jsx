@@ -5,6 +5,7 @@ import { ApolloProvider } from '@apollo/client'
 import { client } from '../../Lib/apollo'
 import {Picker} from '@react-native-picker/picker';
 import { createGamer } from './mutation'
+import { useMutation } from '@apollo/client'
 
 
 
