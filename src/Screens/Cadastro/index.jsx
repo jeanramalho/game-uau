@@ -4,7 +4,7 @@ import styles from './style'
 import { ApolloProvider } from '@apollo/client'
 import { client } from '../../Lib/apollo'
 import {Picker} from '@react-native-picker/picker';
-
+import { gql, useQuery } from "@apollo/client"
 
 
 
@@ -14,7 +14,7 @@ const Cadastro = () => {
     const [pontos, onChangePontos] = React.useState(0);
     const [escopo, selectedEscopo] = React.useState(0);
 
-    
+
 
   return (
     <ApolloProvider client={client}>
