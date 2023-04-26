@@ -10,42 +10,6 @@ const styles = StyleSheet.create({
             alignItems: "center",
         },
 
-        titleInput: {
-            width: "85%",
-            textAlign: "left",
-        },
-
-        campoInput: {
-            width: "85%",
-            height: 35,
-            marginTop: 10,
-            marginBottom: 20,
-            borderColor: "#cecece",
-            borderWidth: 2,
-            borderRadius: 8,
-            padding: 4,
-        },
-
-        selectPicker: {
-            width: "60%",
-
-        },
-
-
-        botao: {
-            padding: 10,
-            backgroundColor: "#00cccc",
-            borderRadius: 6, 
-            margin: 10,
-        },
-        textBotao: {
-            color: "#fff",
-            fontSize: 15,
-            fontWeight: "bold",
-            textTransform: "uppercase",
-        },
-
-
 })
 
 export default styles
