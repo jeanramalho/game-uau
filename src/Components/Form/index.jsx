@@ -60,7 +60,7 @@ const Form = () => {
             <Picker.Item label="Classe" value="classe" />
         </Picker>
 
-        <TouchableOpacity style={styles.botao}>
+        <TouchableOpacity style={styles.botao} onPress={criaGamer}>
             <Text style={styles.textBotao}>Salvar</Text>
         </TouchableOpacity>
 

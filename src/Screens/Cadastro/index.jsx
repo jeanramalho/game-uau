@@ -13,9 +13,7 @@ const Cadastro = () => {
     <ApolloProvider client={client}>
 
       <View style={styles.container}>    
-
-
-
+        <Form />
       </View>
 
     </ApolloProvider>
