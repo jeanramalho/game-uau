@@ -15,7 +15,7 @@ const Cadastro = () => {
     const [pontos, onChangePontos] = React.useState(0);
     const [escopo, selectedEscopo] = React.useState(0);
 
-    const [createGamer, {}] = useMutation(createGamer)
+    const [createParticipante, {}] = useMutation(createGamer)
 
   return (
     <ApolloProvider client={client}>
