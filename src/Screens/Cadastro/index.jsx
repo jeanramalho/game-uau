@@ -17,6 +17,19 @@ const Cadastro = () => {
 
     const [createParticipante, {}] = useMutation(createGamer)
 
+    function criaGamer() {
+      let nome = text
+      let pontos = pontos
+      let escopo = escopo
+
+      createParticipante({variables: {
+        nome: nome,
+        pontos: partInt(pontos),
+        escopo: escopo,
+        
+      }})
+    }
+
   return (
     <ApolloProvider client={client}>
 
