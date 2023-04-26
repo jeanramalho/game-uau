@@ -22,7 +22,7 @@ const Form = () => {
 
       createParticipante({variables: {
         nome: nome,
-        pontos: partInt(pontos),
+        pontos: parseInt(pontos),
         escopo: escopo,
 
       }})
