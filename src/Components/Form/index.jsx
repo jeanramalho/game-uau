@@ -5,6 +5,15 @@ import {Picker} from '@react-native-picker/picker';
 //import { createGamer } from './mutation'
 import { gql, useMutation } from '@apollo/client'
 
+const SEND_DATA = gql`
+  mutation sendData($nome: String!, $escopo: String!, $pontos: int!) {
+    sendData(nome: $nome, escopo: $escopo, pontos: $pontos) {
+      id
+    }
+  }
+`;
+
+
 const createGamer = gql`
     mutation ($nome: string, $escopo: strging, $pontos: int){
         createParticipante(data: {nome: $nome, escopo: $escopo, pontos: $pontos}) {
@@ -27,8 +36,10 @@ const Form = () => {
     const [pontos, onChangePontos] = React.useState(0);
     const [escopo, selectedEscopo] = React.useState(0);
 
-    const [createParticipante, {}] = useMutation(createGamer)
-
+    const [sendData, {}] = useMutation(SEND_DATA)
+    const handleSendData = () => {
+      sendData({ variables: { text, escopo, pontos } });
+    };
 
   return (
 
@@ -62,19 +73,7 @@ const Form = () => {
             <Picker.Item label="Classe" value="classe" />
         </Picker>
 
-        <TouchableOpacity style={styles.botao} onPress={() => {
-          console.log(text)
-          console.log(pontos)
-          console.log(escopo)
-          
-          createParticipante({variables: {
-            nome: text,
-            pontos: parseInt(pontos),
-            escopo: escopo,
-
-            
-      }})
-        }}>
+        <TouchableOpacity style={styles.botao} onPress={handleSendData}>
             <Text style={styles.textBotao}>Salvar</Text>
         </TouchableOpacity>
 
