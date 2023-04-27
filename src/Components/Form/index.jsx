@@ -51,7 +51,7 @@ const Form = () => {
         <TouchableOpacity style={styles.botao} onPress={() => {
           console.log(text)
           createParticipante({variables: {
-            nome: nome,
+            nome: text,
             pontos: parseInt(pontos),
             escopo: escopo,
       }})
