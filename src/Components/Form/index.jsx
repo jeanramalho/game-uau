@@ -13,7 +13,7 @@ const Form = () => {
     const [pontos, onChangePontos] = React.useState(0);
     const [escopo, selectedEscopo] = React.useState(0);
 
-    const [createParticipante, {}] = useMutation(createGamer)
+    const [createParticipante, { loading, error, data }] = useMutation(createGamer)
 
 
   return (
