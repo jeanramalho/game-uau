@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import styles from './style'
 import {Picker} from '@react-native-picker/picker';
 //import { createGamer } from './mutation'
-import { useMutation } from '@apollo/client'
+import { gql, useMutation } from '@apollo/client'
 
 const createGamer = gql`
     mutation ($nome: string, $escopo: strging, $pontos: int){
@@ -27,7 +27,7 @@ const Form = () => {
     const [pontos, onChangePontos] = React.useState(0);
     const [escopo, selectedEscopo] = React.useState(0);
 
-    const [createParticipante, { loading, error, data }] = useMutation(createGamer)
+    const [createParticipante, {}] = useMutation(createGamer)
 
 
   return (
