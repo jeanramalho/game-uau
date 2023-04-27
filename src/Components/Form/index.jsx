@@ -15,18 +15,6 @@ const Form = () => {
 
     const [createParticipante, {}] = useMutation(createGamer)
 
-    function criaGamer() {
-      let nome = text
-      let pontos = pontos
-      let escopo = escopo
-
-      createParticipante({variables: {
-        nome: nome,
-        pontos: parseInt(pontos),
-        escopo: escopo,
-
-      }})
-    }
 
   return (
 
@@ -60,7 +48,14 @@ const Form = () => {
             <Picker.Item label="Classe" value="classe" />
         </Picker>
 
-        <TouchableOpacity style={styles.botao} onPress={criaGamer}>
+        <TouchableOpacity style={styles.botao} onPress={() => {
+          createParticipante({variables: {
+          nome: nome,
+          pontos: parseInt(pontos),
+          escopo: escopo,
+
+      }})
+        }}>
             <Text style={styles.textBotao}>Salvar</Text>
         </TouchableOpacity>
 
