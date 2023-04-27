@@ -2,8 +2,22 @@ import { Text, View, ScrollView, TextInput, TouchableOpacity } from 'react-nativ
 import React, { Component } from 'react'
 import styles from './style'
 import {Picker} from '@react-native-picker/picker';
-import { createGamer } from './mutation'
+//import { createGamer } from './mutation'
 import { useMutation } from '@apollo/client'
+
+const createGamer = gql`
+    mutation ($nome: string, $escopo: strging, $pontos: int){
+        createParticipante(data: {nome: $nome, escopo: $escopo, pontos: $pontos}) {
+            id
+            nome
+            escopo
+            pontos
+    }
+    publishParticipante(where: {nome: $nome}, to: PUBLISHED) {
+        id
+      }
+    }
+`
 
 
 
@@ -50,10 +64,15 @@ const Form = () => {
 
         <TouchableOpacity style={styles.botao} onPress={() => {
           console.log(text)
+          console.log(pontos)
+          console.log(escopo)
+          
           createParticipante({variables: {
             nome: text,
             pontos: parseInt(pontos),
             escopo: escopo,
+
+            
       }})
         }}>
             <Text style={styles.textBotao}>Salvar</Text>
