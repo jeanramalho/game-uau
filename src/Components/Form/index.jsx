@@ -49,6 +49,7 @@ const Form = () => {
         </Picker>
 
         <TouchableOpacity style={styles.botao} onPress={() => {
+          console.log(text)
           createParticipante({variables: {
             nome: nome,
             pontos: parseInt(pontos),
