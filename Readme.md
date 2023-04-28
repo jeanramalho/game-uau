@@ -4,3 +4,4 @@ App que consulta pontuação dos participantes em um banco de dados graphql, e r
 
 Na parte de cadastro é possível cadastrar um novo jogador, com uma pontuação inicial ou não.
 
+No campo de edição é possível adicionar a pontução do dia do participante somando-a com a atual.
