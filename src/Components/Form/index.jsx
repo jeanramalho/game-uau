@@ -15,7 +15,7 @@ const SEND_DATA = gql`
 
 
 const createGamer = gql`
-    mutation ($nome: String, $escopo: String, $pontos: Int){
+    mutation ($nome: String!, $escopo: String!, $pontos: Int!){
         createParticipante(data: {nome: $nome, escopo: $escopo, pontos: $pontos}) {
             id
             nome
@@ -73,7 +73,7 @@ const Form = () => {
             <Picker.Item label="Classe" value="classe" />
         </Picker>
 
-        <TouchableOpacity style={styles.botao} onPress={createParticipante({ variables: { nome: text, pontos: escopo, pontos: pontos } })}>
+        <TouchableOpacity style={styles.botao} onPress={() => {createParticipante({ variables: { nome: text, pontos: escopo, pontos: pontos } })}}>
             <Text style={styles.textBotao}>Salvar</Text>
         </TouchableOpacity>
 
