@@ -37,7 +37,7 @@ const Form = () => {
     const [escopo, selectedEscopo] = React.useState(0);
 
     const [sendData, {}] = useMutation(SEND_DATA)
-    const handleSendData =  () => {
+    const handleSendData =  async () => {
       sendData({ variables: { text, escopo, pontos } });
     };
 
