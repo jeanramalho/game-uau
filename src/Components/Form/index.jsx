@@ -22,10 +22,6 @@ const createGamer = gql`
             escopo
             pontos
     }
-    publishParticipante(where: {nome: $nome}, to: PUBLISHED) {
-        id
-      }
-    }
 `
 
 
@@ -38,7 +34,7 @@ const Form = () => {
 
     const [sendData, {}] = useMutation(SEND_DATA)
     const handleSendData =  async () => {
-      await console.log(text, pontos, escopo)//sendData({ variables: { text, escopo, pontos } });
+      await sendData({ variables: { text, escopo, pontos } });
     };
 
   return (
