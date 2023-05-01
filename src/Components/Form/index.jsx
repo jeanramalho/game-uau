@@ -36,9 +36,9 @@ const Form = () => {
     const [pontos, onChangePontos] = React.useState(0);
     const [escopo, selectedEscopo] = React.useState(0);
 
-    const [sendData, {}] = useMutation(SEND_DATA)
+    const [createParticipante, {}] = useMutation(createGamer)
     const handleSendData =  async () => {
-      await sendData({ variables: { nome: text, pontos: escopo, pontos: pontos } });
+      await createParticipante({ variables: { nome: text, pontos: escopo, pontos: pontos } });
     };
 
   return (
@@ -73,7 +73,7 @@ const Form = () => {
             <Picker.Item label="Classe" value="classe" />
         </Picker>
 
-        <TouchableOpacity style={styles.botao} onPress={handleSendData}>
+        <TouchableOpacity style={styles.botao} onPress={createParticipante}>
             <Text style={styles.textBotao}>Salvar</Text>
         </TouchableOpacity>
 
