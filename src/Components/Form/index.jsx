@@ -15,8 +15,8 @@ const SEND_DATA = gql`
 
 
 const createGamer = gql`
-    mutation ($nome: String!, $escopo: String!, $pontos: Int!){
-        createParticipante(data: {nome: $nome, escopo: $escopo, pontos: $pontos}) {
+    mutation ($nome: String!, $pontos: Int!, $escopo: String!){
+        createParticipante(data: {nome: $nome, pontos: $pontos, escopo: $escopo}) {
             id
             nome
             escopo
@@ -33,12 +33,12 @@ const createGamer = gql`
 const Form = () => {
 
     const [text, onChangeText] = React.useState('');
-    const [pontos, onChangePontos] = React.useState(0);
-    const [escopo, selectedEscopo] = React.useState(0);
+    const [points, onChangePontos] = React.useState(0);
+    const [esc, selectedEscopo] = React.useState(0);
 
     const [createParticipante, {}] = useMutation(createGamer)
     const handleSendData =  async () => {
-      await createParticipante({ variables: { nome: text, pontos: escopo, pontos: pontos } });
+      await createParticipante({ variables: { nome: text, pontos: points, escopo: esc } });
     };
 
   return (
@@ -58,14 +58,14 @@ const Form = () => {
         <TextInput 
         style={styles.campoInput}
         onChangeText={onChangePontos}
-        value={pontos}
+        value={points}
         placeholder='Pontuação inicial'
         keyboardType='numeric'
         />
 
         <Picker
         style={styles.selectPicker}
-        selectedValue={escopo}
+        selectedValue={esc}
         onValueChange={(itemValue, itemIndex) =>
         selectedEscopo(itemValue)
         }>
@@ -73,7 +73,7 @@ const Form = () => {
             <Picker.Item label="Classe" value="classe" />
         </Picker>
 
-        <TouchableOpacity style={styles.botao} onPress={() => {createParticipante({ variables: { nome: text, pontos: escopo, pontos: pontos } })}}>
+        <TouchableOpacity style={styles.botao} onPress={() => {createParticipante({ variables: { nome: text, pontos: points, escopo: esc } })}}>
             <Text style={styles.textBotao}>Salvar</Text>
         </TouchableOpacity>
 
