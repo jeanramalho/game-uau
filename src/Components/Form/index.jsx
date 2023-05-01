@@ -22,6 +22,10 @@ const createGamer = gql`
             escopo
             pontos
     }
+    publishParticipante(where: {nome: $nome}, to: PUBLISHED) {
+        id
+      }
+    }
 `
 
 
