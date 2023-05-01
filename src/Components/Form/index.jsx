@@ -15,7 +15,7 @@ const SEND_DATA = gql`
 
 
 const createGamer = gql`
-    mutation ($nome: string, $escopo: strging, $pontos: int){
+    mutation ($nome: string, $escopo: string, $pontos: int){
         createParticipante(data: {nome: $nome, escopo: $escopo, pontos: $pontos}) {
             id
             nome
