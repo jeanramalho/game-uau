@@ -38,7 +38,7 @@ const Form = () => {
 
     const [sendData, {}] = useMutation(SEND_DATA)
     const handleSendData =  async () => {
-      sendData({ variables: { text, escopo, pontos } });
+      await sendData({ variables: { text, escopo, pontos } });
     };
 
   return (
