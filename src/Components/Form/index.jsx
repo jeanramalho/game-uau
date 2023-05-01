@@ -73,7 +73,7 @@ const Form = () => {
             <Picker.Item label="Classe" value="classe" />
         </Picker>
 
-        <TouchableOpacity style={styles.botao} onPress={() => {createParticipante({ variables: { nome: text, pontos: points, escopo: esc } })}}>
+        <TouchableOpacity style={styles.botao} onPress={() => {createParticipante({ variables: { nome: text, pontos: parseInt(points), escopo: esc } })}}>
             <Text style={styles.textBotao}>Salvar</Text>
         </TouchableOpacity>
 
