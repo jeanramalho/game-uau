@@ -15,7 +15,7 @@ const SEND_DATA = gql`
 
 
 const createGamer = gql`
-    mutation ($nome: string, $escopo: string, $pontos: int){
+    mutation ($nome: String, $escopo: String, $pontos: Int){
         createParticipante(data: {nome: $nome, escopo: $escopo, pontos: $pontos}) {
             id
             nome
@@ -38,7 +38,7 @@ const Form = () => {
 
     const [sendData, {}] = useMutation(SEND_DATA)
     const handleSendData =  async () => {
-      await sendData({ variables: { text, escopo, pontos } });
+      await sendData({ variables: { nome: await text, pontos: await escopo, pontos: await pontos } });
     };
 
   return (
