@@ -38,7 +38,7 @@ const Form = () => {
 
     const [createParticipante, {}] = useMutation(createGamer)
     const handleSendData =  async () => {
-      await createParticipante({ variables: { nome: text, pontos: points, escopo: esc } });
+      await createParticipante({ variables: { nome: text, pontos: points, escopo: parseInt(esc) } });
     };
 
   return (
