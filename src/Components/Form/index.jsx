@@ -5,13 +5,6 @@ import {Picker} from '@react-native-picker/picker';
 //import { createGamer } from './mutation'
 import { gql, useMutation } from '@apollo/client'
 
-const SEND_DATA = gql`
-  mutation sendData($nome: String!, $escopo: String!, $pontos: int!) {
-    sendData(nome: $nome, escopo: $escopo, pontos: $pontos) {
-      id
-    }
-  }
-`;
 
 
 const createGamer = gql`
