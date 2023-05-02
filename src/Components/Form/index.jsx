@@ -16,7 +16,7 @@ const Form = () => {
 
     const [createParticipante, {}] = useMutation(createGamer)
     const handleSendData =  async () => {
-      await createParticipante({ variables: { nome: text, pontos: points, escopo: parseInt(esc) } });
+      await createParticipante({ variables: { nome: text, pontos: parseInt(points), escopo: esc } });
     };
 
   return (
@@ -51,7 +51,7 @@ const Form = () => {
             <Picker.Item label="Classe" value="classe" />
         </Picker>
 
-        <TouchableOpacity style={styles.botao} onPress={() => {createParticipante({ variables: { nome: text, pontos: parseInt(points), escopo: esc } })}}>
+        <TouchableOpacity style={styles.botao} onPress={}>
             <Text style={styles.textBotao}>Salvar</Text>
         </TouchableOpacity>
 
