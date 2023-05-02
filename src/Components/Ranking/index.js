@@ -38,7 +38,7 @@ const Ranking = ({tipo, status, page}) => {
     myQuery = getPartFull
   }
 
-    const {loading, error, data } = useQuery(myQuery, { variables: { escopo: tipo } })
+    const {loading, error, data } = useQuery(myQuery, { variables: { escopo: tipo }, fetchPolicy: 'cache-and-network' })
     if (loading)  {return  <Text>Loading...</Text>}
   
 
