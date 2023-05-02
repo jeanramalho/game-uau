@@ -15,10 +15,7 @@ const Form = () => {
     const [esc, selectedEscopo] = React.useState(0);
 
     const [createParticipante, {}] = useMutation(createGamer)
-    // const handleSendData =  async () => {
-    //   await createParticipante({ variables: { nome: text, pontos: points, escopo: parseInt(esc) } });
-    // };
-
+    
   return (
 
 
