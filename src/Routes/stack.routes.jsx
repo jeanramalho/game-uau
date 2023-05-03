@@ -2,6 +2,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import  {Home}  from '../Screens/Home/Home'
 import CompleteRanking from '../Screens/CompleteRanking/CompleteRanking';
 import CompleteRankingClasse from '../Screens/CompleteRankingClasse/CompleteRankingClasse'
+import EditGamer from '../Screens/EditGamer';
 
 
 const { Screen, Navigator } = createNativeStackNavigator();
