@@ -79,7 +79,7 @@ const Ranking = ({tipo, status, page}) => {
         <Text style={styles.title}> Ranking Liderança</Text>
         {data.participantes.map(participante => {
           return (
-            <Card participante={participante.nome} pontos={participante.pontos} />
+            <Card key={participante.nome} participante={participante.nome} pontos={participante.pontos} />
           )
         })}
         <TouchableOpacity style={styles.botao} onPress={openRanking}>
@@ -93,7 +93,7 @@ const Ranking = ({tipo, status, page}) => {
         <Text style={styles.title}> Ranking Classe</Text>
         {data.participantes.map(participante => {
           return (
-            <Card participante={participante.nome} pontos={participante.pontos} />
+            <Card key={participante.nome} participante={participante.nome} pontos={participante.pontos} />
           )
         })}
         <TouchableOpacity style={styles.botao} onPress={openRanking}>
