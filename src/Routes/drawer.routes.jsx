@@ -8,7 +8,6 @@ import Cadastro  from '../Screens/Cadastro'
 
 
 
-
 const { Screen, Navigator } = createDrawerNavigator();
 
 
@@ -122,9 +121,35 @@ export function DrawerRoutes(){
                     color: "#fff", 
                 }
                                 
-              }}
-              
+              }}              
             />      
+
+<Screen
+              name='Inserir Pontos'  
+              component={EditGamer}
+              options={{
+                drawerLabel: "Inserir Pontos",
+                drawerIcon: () => <MaterialIcons  name="add" size={22} />,
+                headerStyle: {
+                    backgroundColor: "#00cccc",
+                    height: 120,
+                    marginTop: 0,
+                    paddingTop: 0,
+                    justifyContent: "center",
+                    alignItems: "center",
+                    textAlign: "center",
+                  },
+                headerTintColor: '#fff',
+                headerTitle: "Game UAU",
+                headerTitleAlign: 'center',
+                headerTitleStyle: {
+                    fontSize: 30,
+                    fontWeight: 600, 
+                    color: "#fff", 
+                }
+                                
+              }}              
+            />   
         </Navigator>
     )
 }
