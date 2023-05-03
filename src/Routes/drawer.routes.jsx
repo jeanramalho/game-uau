@@ -1,10 +1,12 @@
 import { createDrawerNavigator } from '@react-navigation/drawer'
+import { MaterialIcons } from '@expo/vector-icons'
 import  {Home}  from '../Screens/Home/Home'
 import CompleteRanking from '../Screens/CompleteRanking/CompleteRanking';
 import CompleteRankingClasse from '../Screens/CompleteRankingClasse/CompleteRankingClasse'
 import EditGamer from '../Screens/EditGamer';
-import { MaterialIcons } from '@expo/vector-icons'
 import Cadastro  from '../Screens/Cadastro'
+
+
 
 
 const { Screen, Navigator } = createDrawerNavigator();
