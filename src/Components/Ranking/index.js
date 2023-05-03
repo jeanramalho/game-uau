@@ -38,9 +38,9 @@ const Ranking = ({tipo, status, page}) => {
     myQuery = getPartFull
   }
 
-    const {loading, error, data } = useQuery(myQuery, { variables: { escopo: tipo }, fetchPolicy: 'cache-and-network' })
+    let {loading, error, data, refetch } = useQuery(myQuery, { variables: { escopo: tipo }, fetchPolicy: 'cache-and-network' })
     if (loading)  {return  <Text>Loading...</Text>}
-  
+   
 
   const navigation = useNavigation()
 
@@ -85,6 +85,12 @@ const Ranking = ({tipo, status, page}) => {
         <TouchableOpacity style={styles.botao} onPress={openRanking}>
                     <Text style={styles.textBotao}>{titleButton}</Text>
         </TouchableOpacity>
+
+        <TouchableOpacity style={styles.botao} onPress={refetch}>
+                    <Text style={styles.textBotao}>Atualizar</Text>
+        </TouchableOpacity>
+
+      
       </View>
     )
   } else if(tipo == "classe"){
