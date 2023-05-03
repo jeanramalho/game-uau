@@ -1,7 +1,7 @@
 import { ApolloProvider } from '@apollo/client'
 import { client } from '../../Lib/apollo'
 import { View, Text } from "react-native"
-import { styles } from "./style"
+import styles  from "./style"
 
 
 
