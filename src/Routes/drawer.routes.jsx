@@ -129,7 +129,7 @@ export function DrawerRoutes(){
               component={EditGamer}
               options={{
                 drawerLabel: "Inserir Pontos",
-                drawerIcon: () => <MaterialIcons  name="add" size={22} />,
+                drawerIcon: () => <MaterialIcons  name="edit" size={22} />,
                 headerStyle: {
                     backgroundColor: "#00cccc",
                     height: 120,
