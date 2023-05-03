@@ -1,4 +1,4 @@
-import { Text, View } from 'react-native'
+import { Text, View,} from 'react-native'
 import React, { Component } from 'react'
 import Ranking from '../Ranking'
 import styles from './style'

@@ -30,6 +30,7 @@ const getPartFull = gql`
 
 
 const Ranking = ({tipo, status, page}) => {
+
   let myQuery = ''
 
   if (status == "top3") {
@@ -40,6 +41,8 @@ const Ranking = ({tipo, status, page}) => {
 
     let {loading, error, data, refetch } = useQuery(myQuery, { variables: { escopo: tipo }, fetchPolicy: 'cache-and-network' })
     if (loading)  {return  <Text>Loading...</Text>}
+    
+   
    
 
   const navigation = useNavigation()
@@ -58,12 +61,15 @@ const Ranking = ({tipo, status, page}) => {
     if(tipo == 'lid' && page == 'home'){
     
       navigation.navigate('CompleteRanking')
+      refetch()
       
     } else if (tipo == 'classe' && page == 'home')   {
       navigation.navigate('CompleteRankingClasse')
+      refetch()
     
     } else  {
       navigation.navigate('Home')
+      refetch()
    
     }
   }
@@ -85,11 +91,6 @@ const Ranking = ({tipo, status, page}) => {
         <TouchableOpacity style={styles.botao} onPress={openRanking}>
                     <Text style={styles.textBotao}>{titleButton}</Text>
         </TouchableOpacity>
-
-        <TouchableOpacity style={styles.botao} onPress={refetch}>
-                    <Text style={styles.textBotao}>Atualizar</Text>
-        </TouchableOpacity>
-
       
       </View>
     )
