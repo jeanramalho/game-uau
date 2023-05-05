@@ -3,7 +3,7 @@ import styles from './styles'
 
 const EditCard = () => {
     return (
-        <View style={styles.container}>
+        <View>
             <Text>Olá Mundo</Text>
         </View>
     )
