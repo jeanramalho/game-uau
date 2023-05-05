@@ -1,7 +1,7 @@
 import { ApolloProvider } from '@apollo/client'
 import { client } from '../../Lib/apollo'
 import { View, Text } from "react-native"
-import EditCard from '../EditGamer'
+import EditCard from '../../Components/EditCard'
 import styles  from "./style"
 
 
