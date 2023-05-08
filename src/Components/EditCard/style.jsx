@@ -5,6 +5,8 @@ const styles = StyleSheet.create({
         container: {
             width: "90%",
             padding: 15,
+            flexDirection: "row",
+            justifyContent: "space-evenly"
         },
 
 })
