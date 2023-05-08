@@ -7,7 +7,7 @@ const EditCard = () => {
             <Text>Nome do Gamer</Text>
             <Text>500pt</Text>
             <Text>+</Text>
-            <TextInput />
+            <TextInput style={styles.intupPoint}/>
         </View>
     )
 }
