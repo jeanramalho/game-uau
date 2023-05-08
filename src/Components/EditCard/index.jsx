@@ -1,4 +1,4 @@
-import { View, Text } from 'react-native'
+import { View, Text, TouchableOpacity } from 'react-native'
 import styles  from "./style"
 
 const EditCard = () => {
@@ -6,6 +6,7 @@ const EditCard = () => {
         <View style={styles.container}>
             <Text>Nome do Gamer</Text>
             <Text>500pt</Text>
+           
         </View>
     )
 }
