@@ -4,7 +4,8 @@ import styles  from "./style"
 const EditCard = () => {
     return (
         <View style={styles.container}>
-            <Text>Olá Mundo</Text>
+            <Text>Nome do Gamer</Text>
+            
         </View>
     )
 }
