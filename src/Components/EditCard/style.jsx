@@ -3,10 +3,12 @@ import { StyleSheet } from "react-native";
 const styles = StyleSheet.create({
 
         container: {
-            width: "90%",
+            width: "95%",
             padding: 15,
             flexDirection: "row",
-            justifyContent: "space-evenly"
+            justifyContent: "space-evenly",
+            borderRadius: 8,
+            backgroundColor: "#cecece",
         },
 
 })
