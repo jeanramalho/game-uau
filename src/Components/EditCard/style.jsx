@@ -11,6 +11,13 @@ const styles = StyleSheet.create({
             backgroundColor: "#cecece",
         },
 
+        intupPoint: {
+            width: 50,
+            height: 20,
+            backgroundColor: "#fff",
+
+        }
+
 })
 
 export default styles
