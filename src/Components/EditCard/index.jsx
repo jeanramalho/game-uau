@@ -5,7 +5,7 @@ const EditCard = () => {
     return (
         <View style={styles.container}>
             <Text>Nome do Gamer</Text>
-            
+            <Text>500pt</Text>
         </View>
     )
 }
