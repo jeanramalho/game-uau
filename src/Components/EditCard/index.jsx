@@ -1,7 +1,7 @@
 import { View, Text, TouchableOpacity, TextInput } from 'react-native'
 import styles  from "./style"
 
-const EditCard = ({}) => {
+const EditCard = ({gamer, points, newPoints}) => {
     return (
         <View style={styles.container}>
             <Text>Nome do Gamer</Text>
