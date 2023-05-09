@@ -4,7 +4,10 @@ import { View, Text } from "react-native"
 import EditCard from '../../Components/EditCard'
 import styles  from "./style"
 
-
+let data = {
+    pontos: 500,
+    novosPontos: 550,
+}
 
 const EditGamer = () => {
 
