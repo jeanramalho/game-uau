@@ -4,7 +4,7 @@ import styles  from "./style"
 const EditCard = ({gamer, points, newPoints}) => {
     return (
         <View style={styles.container}>
-            <Text>Nome do Gamer</Text>
+            <Text>{gamer}</Text>
             <Text>500pt</Text>
             <Text>+</Text>
             <TextInput style={styles.intupPoint}/>
