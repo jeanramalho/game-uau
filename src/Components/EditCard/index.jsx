@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity, TextInput, TouchableOpacity } from 'react-native'
+import { View, Text, TouchableOpacity, TextInput } from 'react-native'
 import styles  from "./style"
 import { MaterialIcons } from '@expo/vector-icons'
 
