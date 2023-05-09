@@ -18,8 +18,9 @@ const styles = StyleSheet.create({
 
         },
 
-        button: {
-            backgroundColor: "black",
+        buttonStyle: {
+            backgroundColor: "#000",
+            width: 20,
         },
 
 })
