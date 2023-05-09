@@ -12,7 +12,7 @@ const EditGamer = () => {
             <ApolloProvider client={client}>
 
                 <View style={styles.container}>
-                    <EditCard />
+                    <EditCard gamer="Jean" points={500} newPoints={500}/>
                 </View>
 
             </ApolloProvider>            
