@@ -10,7 +10,7 @@ const EditCard = ({gamer, points, newPoints}) => {
             <Text>+</Text>
             <TextInput style={styles.intupPoint} value={newPoints}/>
             <TouchableOpacity style={styles.buttonStyle}>
-                <Text>Olé</Text>
+                <MaterialIcons name="home" size={22} />
             </TouchableOpacity>
         </View>
     )
