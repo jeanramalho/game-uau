@@ -23,6 +23,7 @@ const styles = StyleSheet.create({
             color: "#000",
             borderRadius: 8,
             padding: 8,
+            color: "00cccc",
         },
 
 })
