@@ -7,6 +7,7 @@ const styles = StyleSheet.create({
             padding: 15,
             flexDirection: "row",
             justifyContent: "space-evenly",
+            alignItems: "center",
             borderRadius: 8,
             backgroundColor: "#cecece",
         },
