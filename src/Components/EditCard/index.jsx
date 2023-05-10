@@ -17,3 +17,26 @@ const EditCard = ({gamer, points, newPoints}) => {
 }
 
 export default EditCard
+
+//exemplo de passando uma função de componente para outro
+// // Componente Pai
+// const ParentComponent = () => {
+//     const handleAction = () => {
+//       // Faça algo aqui
+//     };
+  
+//     return (
+//       <View>
+//         <ChildComponent onAction={handleAction} />
+//       </View>
+//     );
+//   };
+  
+//   // Componente Filho
+//   const ChildComponent = ({ onAction }) => {
+//     return (
+//       <TouchableOpacity onPress={onAction}>
+//         <Text>Clique aqui para acionar a função do componente pai</Text>
+//       </TouchableOpacity>
+//     );
+//   };
