@@ -23,13 +23,13 @@ const styles = StyleSheet.create({
             backgroundColor: "#fff",
             color: "#000",
             borderRadius: 8,
-            padding: 8,
+            padding: 5,
         },
 
         buttonContainer: {
             width: "20%",
             flexDirection: "row",
-            
+
         },
 
 })
