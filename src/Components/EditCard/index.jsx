@@ -9,12 +9,17 @@ const EditCard = ({gamer, points, newPoints}) => {
             <Text>{points}pt</Text>
             <Text>+</Text>
             <TextInput style={styles.intupPoint} value={newPoints}/>
-            <TouchableOpacity style={styles.buttonStyle}>
-                <Fontisto name="save-1" size={22} color="#00cccc"/>
-            </TouchableOpacity>
-            <TouchableOpacity style={styles.buttonStyle}>
-                <MaterialIcons name="delete" size={22} color="#00cccc"/>
-            </TouchableOpacity>
+
+            <View>
+                <TouchableOpacity style={styles.buttonStyle}>
+                    <Fontisto name="save-1" size={22} color="#00cccc"/>
+                </TouchableOpacity>
+                
+                <TouchableOpacity style={styles.buttonStyle}>
+                    <MaterialIcons name="delete" size={22} color="#00cccc"/>
+                </TouchableOpacity>
+            </View>
+            
         </View>
     )
 }
