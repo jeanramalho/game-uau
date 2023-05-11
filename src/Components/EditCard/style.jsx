@@ -26,6 +26,10 @@ const styles = StyleSheet.create({
             padding: 8,
         },
 
+        buttonContainer: {
+
+        },
+
 })
 
 export default styles
