@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
             width: "95%",
             padding: 15,
             flexDirection: "row",
-            justifyContent: "flex-start",
+            justifyContent: "space-around",
             alignItems: "center",
             borderRadius: 8,
             backgroundColor: "#cecece",
@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
         },
 
         buttonContainer: {
-            width: "20%",
+            padding: 8,
             flexDirection: "row",
             justifyContent: "space-between",
         },
