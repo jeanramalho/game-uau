@@ -27,7 +27,9 @@ const styles = StyleSheet.create({
         },
 
         buttonContainer: {
-
+            width: "20%",
+            flexDirection: "row",
+            
         },
 
 })
