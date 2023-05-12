@@ -29,7 +29,9 @@ const styles = StyleSheet.create({
         buttonContainer: {
             padding: 8,
             flexDirection: "row",
-            marginRight: 4,
+            justifyContent: "flex-end",
+            borderWidth: 4,
+            borderColor: "#000"
         },
 
 })
