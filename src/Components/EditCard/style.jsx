@@ -14,9 +14,10 @@ const styles = StyleSheet.create({
 
         intupPoint: {
             width: 50,
-            height: 20,
+            height: 30,
             backgroundColor: "#fff",
             borderRadius: 8,
+            textAling: "center",
         },
 
         buttonStyle: {
