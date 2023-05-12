@@ -3,8 +3,8 @@ import { StyleSheet } from "react-native";
 const styles = StyleSheet.create({
 
         container: {
-            width: "95%",
-            padding: 15,
+            width: "100%",
+            padding: 5,
             flexDirection: "row",
             justifyContent: "space-around",
             alignItems: "center",
@@ -13,7 +13,12 @@ const styles = StyleSheet.create({
         },
 
         gamerName: {
+            width: "30%",
             textOverflow: "ellipsis",
+            whiteSpace: "nowrap",
+            overflow: "hidden",
+            marginRight: 3,
+            textAlign: "center",
         },
 
         intupPoint: {
@@ -32,9 +37,17 @@ const styles = StyleSheet.create({
         },
 
         buttonContainer: {
-            width: "22%",
+            width: "20%",
             flexDirection: "row",
             justifyContent: "space-between",
+        },
+
+        someIcon:{
+            margin: 3,
+        },
+
+        pointsSpace: {
+            marginRight: 3
         },
 
 })

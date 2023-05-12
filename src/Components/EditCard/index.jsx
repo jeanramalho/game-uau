@@ -7,7 +7,7 @@ const EditCard = ({gamer, points, newPoints}) => {
         <View style={styles.container}>
             <Text style={styles.gamerName}>{gamer}</Text>
             <Text>{points}pt</Text>
-            <Text>+</Text>
+            <Text styles={styles.gamerName}>+</Text>
             <TextInput style={styles.intupPoint} value={newPoints}/>            
 
             <View style={styles.buttonContainer}>
