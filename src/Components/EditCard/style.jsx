@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
             width: 50,
             height: 20,
             backgroundColor: "#fff",
-
+            borderRadius: 8,
         },
 
         buttonStyle: {
@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
         },
 
         buttonContainer: {
-            width: "20%",
+            width: "22%",
             flexDirection: "row",
             justifyContent: "space-between",
         },
