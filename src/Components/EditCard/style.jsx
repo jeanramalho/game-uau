@@ -12,6 +12,10 @@ const styles = StyleSheet.create({
             backgroundColor: "#cecece",
         },
 
+        gamerName: {
+            textOverflow: "ellipsis",
+        },
+
         intupPoint: {
             width: 50,
             height: 30,
