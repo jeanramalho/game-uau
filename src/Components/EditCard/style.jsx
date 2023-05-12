@@ -27,11 +27,9 @@ const styles = StyleSheet.create({
         },
 
         buttonContainer: {
-            padding: 8,
+            width: "20%",
             flexDirection: "row",
-            justifyContent: "flex-end",
-            borderWidth: 4,
-            borderColor: "#000"
+            justifyContent: "space-between",
         },
 
 })
