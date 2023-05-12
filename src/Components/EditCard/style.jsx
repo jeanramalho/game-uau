@@ -29,7 +29,6 @@ const styles = StyleSheet.create({
         buttonContainer: {
             padding: 8,
             flexDirection: "row",
-            justifyContent: "space-between",
         },
 
 })
