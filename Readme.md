@@ -15,3 +15,5 @@ Na opção Ranking é possível ver os rankings da classe e da diretoria.
 Na opção novo gamer é possível cadastrar um novo jogador com sua pontuação inicial.
 
 ## Opção Edit Gamer
+
+Na opção edit gamer é possível colocar nova pontuação em um jogador ou excluir o mesmo.
