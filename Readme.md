@@ -11,3 +11,5 @@ No campo de edição é possível adicionar a pontução do dia do participante 
 Na opção Ranking é possível ver os rankings da classe e da diretoria.
 
 ## Opção Novo Gamer.
+
+Na opção novo gamer é possível cadastrar um novo jogador com sua pontuação inicial.
