@@ -24,35 +24,9 @@ const EditRanking = ({}) => {
 
     let {loading, error, data, refetch } = useQuery(myQuery, { variables: { escopo: tipo }, fetchPolicy: 'cache-and-network' })
     if (loading)  {return  <Text>Loading...</Text>}
-
-  var titleButton = ""
-
-  if (page == 'home') {
-    titleButton = "Ver Ranking Completo"
-  } else {
-    titleButton = "Início"
-  }
   
 
-  function openRanking(){
-    
-    if(tipo == 'lid' && page == 'home'){
-    
-      navigation.navigate('CompleteRanking')
-      refetch()
-      
-    } else if (tipo == 'classe' && page == 'home')   {
-      navigation.navigate('CompleteRankingClasse')
-      refetch()
-    
-    } else  {
-      navigation.navigate('Home')
-      refetch()
-   
-    }
-  }
 
-  if(tipo == "lid") {
 
    
 
@@ -60,10 +34,10 @@ const EditRanking = ({}) => {
       
       <View style={styles.container}>
       
-        <Text style={styles.title}> Ranking Liderança</Text>
+        <Text style={styles.title}> Edit Gamers </Text>
         {data.participantes.map(participante => {
           return (
-            <Card key={participante.nome} participante={participante.nome} pontos={participante.pontos} />
+            <EditCard key={participante.nome} participante={participante.nome} pontos={participante.pontos} />
           )
         })}
         <TouchableOpacity style={styles.botao} onPress={openRanking}>
@@ -72,21 +46,7 @@ const EditRanking = ({}) => {
       
       </View>
     )
-  } else if(tipo == "classe"){
-    return (
-      <View style={styles.container}>
-        <Text style={styles.title}> Ranking Classe</Text>
-        {data.participantes.map(participante => {
-          return (
-            <Card key={participante.nome} participante={participante.nome} pontos={participante.pontos} />
-          )
-        })}
-        <TouchableOpacity style={styles.botao} onPress={openRanking}>
-                    <Text style={styles.textBotao}>{titleButton}</Text>
-        </TouchableOpacity>
-      </View>
-    )
-  }
+  
  
     
   
