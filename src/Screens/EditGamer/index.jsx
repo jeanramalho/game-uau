@@ -1,8 +1,10 @@
+import { Text, View, ScrollView } from 'react-native'
+import React, { Component } from 'react'
+import styles from './style'
+import EditRanking from '../../Components/Ranking'
 import { ApolloProvider } from '@apollo/client'
 import { client } from '../../Lib/apollo'
-import { View, Text } from "react-native"
-import EditCard from '../../Components/EditCard'
-import styles  from "./style"
+
 
 
 let data = {
@@ -15,11 +17,15 @@ const EditGamer = () => {
         return (
             <ApolloProvider client={client}>
 
+            <View style={styles.container}>
+              <ScrollView style={styles.scrollContainer}>
                 <View style={styles.container}>
-                    <EditCard gamer="Jean Ramalho" points={data.pontos + data.novosPontos} newPoints={data.novosPontos}/>
+                  <EditRanking />           
                 </View>
-
-            </ApolloProvider>            
+              </ScrollView>
+            </View>
+      
+          </ApolloProvider>   
         )
 }
 
