@@ -29,7 +29,7 @@ const getPartFull = gql`
 
 
 
-const Ranking = ({tipo, status, page}) => {
+const EditRanking = ({}) => {
 
   let myQuery = ''
 
