@@ -37,7 +37,7 @@ const EditRanking = ({}) => {
         <Text style={styles.title}> Edit Gamers </Text>
         {data.participantes.map(participante => {
           return (
-            <EditCard key={participante.nome} participante={participante.nome} pontos={participante.pontos} />
+            <EditCard key={participante.nome} gamer={participante.nome} points={participante.pontos} />
           )
         })}
         <TouchableOpacity style={styles.botao} onPress={openRanking}>
