@@ -3,8 +3,7 @@ import { client } from '../../Lib/apollo'
 import { View, Text } from "react-native"
 import EditCard from '../../Components/EditCard'
 import styles  from "./style"
-import { ApolloProvider } from '@apollo/client'
-import { client } from '../../Lib/apollo'
+
 
 let data = {
     pontos: 500,
