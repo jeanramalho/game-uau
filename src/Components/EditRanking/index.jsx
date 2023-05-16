@@ -4,3 +4,9 @@ import styles from "./style"
 import Card from "../Card"
 import { useNavigation } from '@react-navigation/native'
 import { gql, useQuery } from "@apollo/client"
+
+const EditRanking = () => {
+    return ()
+}
+
+export default EditRanking
