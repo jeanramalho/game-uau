@@ -40,9 +40,6 @@ const EditRanking = ({}) => {
             <EditCard key={participante.nome} gamer={participante.nome} points={participante.pontos} />
           )
         })}
-        <TouchableOpacity style={styles.botao} onPress={openRanking}>
-                    <Text style={styles.textBotao}>{titleButton}</Text>
-        </TouchableOpacity>
       
       </View>
     )
