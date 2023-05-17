@@ -6,8 +6,8 @@ import { gql, useQuery } from "@apollo/client"
 
 
 const getAllGamers = gql`
- query Myquery ($escopo: String) {
-  participantes(where: {escopo: $escopo}, orderBy: pontos_DESC) {
+ query Myquery {
+  participantes( orderBy: pontos_DESC) {
     nome
     pontos
     escopo
@@ -20,7 +20,7 @@ const getAllGamers = gql`
 const EditRanking = ({}) => {
 
 
-    let {loading, error, data, refetch } = useQuery(getAllGamers, { variables: { escopo: tipo }, fetchPolicy: 'cache-and-network' })
+    let {loading, error, data, refetch } = useQuery(getAllGamers, { fetchPolicy: 'cache-and-network' })
     if (loading)  {return  <Text>Loading...</Text>}
   
 
