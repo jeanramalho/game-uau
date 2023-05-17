@@ -26,10 +26,6 @@ const EditRanking = ({}) => {
     if (loading)  {return  <Text>Loading...</Text>}
   
 
-
-
-   
-
     return (
       
       <View style={styles.container}>
@@ -49,4 +45,4 @@ const EditRanking = ({}) => {
   
 }
 
-export default Ranking
+export default EditRanking
