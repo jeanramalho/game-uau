@@ -20,7 +20,7 @@ const getAllGamers = gql`
 const EditRanking = ({}) => {
 
 
-    let {loading, error, data, refetch } = useQuery(getAllGamers, { fetchPolicy: 'cache-and-network' })
+    let {loading, error, data, refetch } = useQuery(getAllGamers)
     if (loading)  {return  <Text>Loading...</Text>}
   
 
