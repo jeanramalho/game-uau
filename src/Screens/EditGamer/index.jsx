@@ -1,7 +1,7 @@
 import { Text, View, ScrollView } from 'react-native'
 import React, { Component } from 'react'
 import styles from './style'
-import EditRanking from '../../Components/Ranking'
+import Ranking from '../../Components/Ranking'
 import { ApolloProvider } from '@apollo/client'
 import { client } from '../../Lib/apollo'
 
@@ -20,7 +20,7 @@ const EditGamer = () => {
             <View style={styles.container}>
               <ScrollView style={styles.scrollContainer}>
                 <View style={styles.container}>
-                  <EditRanking />           
+                  <Ranking />           
                 </View>
               </ScrollView>
             </View>
