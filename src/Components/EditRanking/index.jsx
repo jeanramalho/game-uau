@@ -2,7 +2,7 @@ import {Text, View, Button, TouchableOpacity } from 'react-native'
 import React, { Component } from 'react'
 import styles from "./style"
 import EditCard from "../EditCard"
-// import { gql, useQuery } from "@apollo/client"
+import { gql, useQuery } from "@apollo/client"
 
 
 // const getAllGamers = gql`
