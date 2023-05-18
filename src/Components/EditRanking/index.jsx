@@ -20,8 +20,8 @@ const getAllGamers = gql`
 const EditRanking = ({}) => {
 
 
-    // let {loading, error, data, refetch } = useQuery(getAllGamers)
-    // if (loading)  {return  <Text>Loading...</Text>}
+    let {loading, error, data, refetch } = useQuery(getAllGamers)
+    if (loading)  {return  <Text>Loading...</Text>}
   
 
     return (
