@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
             justifyContent: "space-around",
             alignItems: "center",
             borderRadius: 8,
-            backgroundColor: "#cecece",
+            backgroundColor: "#c3c3c3",
         },
 
         gamerName: {
