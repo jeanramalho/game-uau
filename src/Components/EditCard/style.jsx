@@ -10,6 +10,7 @@ const styles = StyleSheet.create({
             alignItems: "center",
             borderRadius: 8,
             backgroundColor: "#999",
+            marginBottom: 10,
         },
 
         gamerName: {
