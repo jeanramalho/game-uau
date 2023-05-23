@@ -2,7 +2,7 @@ import { View, Text, TouchableOpacity, TextInput } from 'react-native'
 import styles  from "./style"
 import { MaterialIcons, Fontisto } from '@expo/vector-icons'
 
-const EditCard = ({gamer, points, newPoints}) => {
+const EditCard = ({gamer, points, newPoints, onAction}) => {
     return (
         <View style={styles.container}>
             <Text style={styles.gamerName}>{gamer}</Text>
@@ -17,7 +17,7 @@ const EditCard = ({gamer, points, newPoints}) => {
                 </TouchableOpacity>
 
                 <TouchableOpacity style={styles.buttonStyle}>
-                    <Fontisto name="save-1" size={18} color="#00cccc"/>
+                    <Fontisto name="save-1" size={18} color="#00cccc"  onPress={onAction}/>
                 </TouchableOpacity>
                 
             </View>
