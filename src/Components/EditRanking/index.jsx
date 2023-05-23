@@ -40,6 +40,8 @@ const EditRanking = ({}) => {
           gamer: nameGamer,
         }
       })
+
+      return alert('Gamer Atualizado com Sucesso!')
     }
   
 
