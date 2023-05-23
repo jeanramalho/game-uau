@@ -29,6 +29,11 @@ const EditRanking = ({}) => {
 
     let {loading, error, data, refetch } = useQuery(getAllGamers)
     if (loading)  {return  <Text>Loading...</Text>}
+
+    function updateGamer() {
+      
+      const [gamerChanged, {}] = useMutation(saveUserChanged)
+    }
   
 
     return (
