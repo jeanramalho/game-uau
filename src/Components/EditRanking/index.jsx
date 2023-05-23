@@ -14,6 +14,9 @@ const getAllGamers = gql`
   }
 }
 `
+const saveUserChanged = gql`
+  
+`
 
 
 
