@@ -52,7 +52,7 @@ const EditRanking = ({}) => {
         <Text style={styles.title}> Edit Gamers </Text>
         {data.participantes.map(participante => {
           return (
-            <EditCard key={participante.nome} gamer={participante.nome} points={participante.pontos} />
+            <EditCard key={participante.nome} gamer={participante.nome} points={participante.pontos} onAction={updateGamer}/>
           )
         })}
       
