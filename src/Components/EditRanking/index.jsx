@@ -16,7 +16,7 @@ const getAllGamers = gql`
 `
 const saveUserChanged = gql`
   mutation {
-    updateParticipante(data: {pontos: $points}, where: {nome: "Jean Teste2"}) {
+    updateParticipante(data: {pontos: $points}, where: {nome: $gamer}) {
       id
     }
   }
