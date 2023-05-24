@@ -4,7 +4,8 @@ import { MaterialIcons, Fontisto } from '@expo/vector-icons'
 
 const EditCard = ({gamer, points, newPoints, onAction}) => {
     let novosPontos = points + newPoints
-
+    const upGamer = onAction(novosPontos, gamer)
+    
     return (
         <View style={styles.container}>
             <Text style={styles.gamerName}>{gamer}</Text>
@@ -19,7 +20,7 @@ const EditCard = ({gamer, points, newPoints, onAction}) => {
                 </TouchableOpacity>
 
                 <TouchableOpacity style={styles.buttonStyle}>
-                    <Fontisto name="save-1" size={18} color="#00cccc"  onPress={onAction(novosPontos, gamer)}/>
+                    <Fontisto name="save-1" size={18} color="#00cccc"  onPress={upGamer}/>
                 </TouchableOpacity>
                 
             </View>
