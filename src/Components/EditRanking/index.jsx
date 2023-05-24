@@ -44,7 +44,7 @@ const EditRanking = ({}) => {
       
         <Text style={styles.title}> Edit Gamers </Text>
         {data.participantes.map(participante => {
-          let novosPontos = participante.pontos + 2000
+          
           return (
             <EditCard key={participante.nome} gamer={participante.nome} points={participante.pontos} onAction={updateGamer}/>
           )
