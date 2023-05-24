@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import styles from "./style"
 import EditCard from "../EditCard"
 import { gql, useQuery, useMutation } from "@apollo/client"
+import { saveUserChanged } from "./mutation"
 
 
 const getAllGamers = gql`
