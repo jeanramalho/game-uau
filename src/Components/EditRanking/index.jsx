@@ -23,19 +23,19 @@ const EditRanking = ({}) => {
     let {loading, error, data, refetch } = useQuery(getAllGamers)
     if (loading)  {return  <Text>Loading...</Text>}
 
-    // function updateGamer(newPoints, nameGamer) {
+    function updateGamer(newPoints, nameGamer) {
 
-    //   const [gamerChanged, {}] = useMutation(saveUserChanged)
+      const [gamerChanged, {}] = useMutation(saveUserChanged)
 
-    //   gamerChanged({
-    //     variables: {
-    //       points: newPoints,
-    //       gamer: nameGamer,
-    //     }
-    //   })
+      gamerChanged({
+        variables: {
+          points: newPoints,
+          gamer: nameGamer,
+        }
+      })
 
-    //   return alert('Gamer Atualizado com Sucesso!')
-    // }
+      return alert('Gamer Atualizado com Sucesso!')
+    }
   
 
     return (
