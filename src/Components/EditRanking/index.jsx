@@ -17,26 +17,25 @@ const getAllGamers = gql`
 `
 
 
-
 const EditRanking = ({}) => {
 
 
     let {loading, error, data, refetch } = useQuery(getAllGamers)
     if (loading)  {return  <Text>Loading...</Text>}
 
-    function updateGamer(newPoints, nameGamer) {
+    // function updateGamer(newPoints, nameGamer) {
 
-      const [gamerChanged, {}] = useMutation(saveUserChanged)
+    //   const [gamerChanged, {}] = useMutation(saveUserChanged)
 
-      gamerChanged({
-        variables: {
-          points: newPoints,
-          gamer: nameGamer,
-        }
-      })
+    //   gamerChanged({
+    //     variables: {
+    //       points: newPoints,
+    //       gamer: nameGamer,
+    //     }
+    //   })
 
-      return alert('Gamer Atualizado com Sucesso!')
-    }
+    //   return alert('Gamer Atualizado com Sucesso!')
+    // }
   
 
     return (
@@ -47,7 +46,7 @@ const EditRanking = ({}) => {
         {data.participantes.map(participante => {
           let novosPontos = participante.pontos + 2000
           return (
-            <EditCard key={participante.nome} gamer={participante.nome} points={participante.pontos} onAction={updateGamer(novosPontos, participante.nome)}/>
+            <EditCard key={participante.nome} gamer={participante.nome} points={participante.pontos} />
           )
         })}
       
