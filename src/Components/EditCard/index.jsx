@@ -3,6 +3,8 @@ import styles  from "./style"
 import { MaterialIcons, Fontisto } from '@expo/vector-icons'
 
 const EditCard = ({gamer, points, newPoints, onAction}) => {
+    let novosPontos = points + newPoints
+
     return (
         <View style={styles.container}>
             <Text style={styles.gamerName}>{gamer}</Text>
