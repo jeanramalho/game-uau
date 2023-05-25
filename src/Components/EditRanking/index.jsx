@@ -46,7 +46,7 @@ const EditRanking = ({}) => {
         {data.participantes.map(participante => {
           
           return (
-            <EditCard key={participante.nome} gamer={participante.nome} points={participante.pontos} onAction={() => {updateGamer(parseInt(participante.pontos), participante.nome)}}/>
+            <EditCard key={participante.nome} gamer={participante.nome} points={participante.pontos} onAction={() => {updateGamer(parseInt("500350"), participante.nome)}}/>
           )
         })}
       
