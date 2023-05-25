@@ -4,7 +4,7 @@ import { MaterialIcons, Fontisto } from '@expo/vector-icons'
 
 const EditCard = ({gamer, points, newPoints, onAction}) => {
     let novosPontos = points + newPoints
-    const upGamer = onAction(novosPontos, gamer)
+    const upGamer = ''
     
     return (
         <View style={styles.container}>
