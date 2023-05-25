@@ -23,21 +23,20 @@ const EditRanking = ({}) => {
     let {loading, error, data, refetch } = useQuery(getAllGamers)
     if (loading)  {return  <Text>Loading...</Text>}
 
-    function updateGamer(newPoints, nameGamer) {
+    // function updateGamer(newPoints, nameGamer) {
 
-      const [gamerChanged, {}] = useMutation(saveUserChanged)
+    //   const [gamerChanged, {}] = useMutation(saveUserChanged)
 
-      gamerChanged({
-        variables: {
-          points: newPoints,
-          gamer: nameGamer,
-        }
-      })
+    //   gamerChanged({
+    //     variables: {
+    //       points: newPoints,
+    //       gamer: nameGamer,
+    //     }
+    //   })
 
-      return alert('Gamer Atualizado com Sucesso!')
-    }
-   
-    novosPontos = 30546
+    //   return alert('Gamer Atualizado com Sucesso!')
+    // }
+  const novosPontos = 30547
 
     return (
       
@@ -47,14 +46,18 @@ const EditRanking = ({}) => {
         {data.participantes.map(participante => {
           
           return (
-            <EditCard key={participante.nome} gamer={participante.nome} points={participante.pontos} onAction={(novosPontos, participante.nome) => {
+            <EditCard key={participante.nome} 
+            gamer={participante.nome} 
+            points={participante.pontos} 
+            onAction={(novosPontos) => {
               gamerChanged({
                 variables: {
                   points: novosPontos,
-                  gamer: participante.Nome,
+                  gamer: participante.nome,
                 }
               })
-              return alert('Gamer Atualizado com Sucesso!')
+
+              return alert("dados salvos com sucesso")
             }}/>
           )
         })}
