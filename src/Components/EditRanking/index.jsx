@@ -36,7 +36,8 @@ const EditRanking = ({}) => {
 
       return alert('Gamer Atualizado com Sucesso!')
     }
-  
+   
+    novosPontos = 30546
 
     return (
       
@@ -46,7 +47,15 @@ const EditRanking = ({}) => {
         {data.participantes.map(participante => {
           
           return (
-            <EditCard key={participante.nome} gamer={participante.nome} points={participante.pontos} onAction={(newPoints, gamerName) => {}}/>
+            <EditCard key={participante.nome} gamer={participante.nome} points={participante.pontos} onAction={(novosPontos, participante.nome) => {
+              gamerChanged({
+                variables: {
+                  points: novosPontos,
+                  gamer: participante.Nome,
+                }
+              })
+              return alert('Gamer Atualizado com Sucesso!')
+            }}/>
           )
         })}
       
