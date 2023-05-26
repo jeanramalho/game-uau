@@ -90,7 +90,7 @@ const getAllGamers = gql`
 }
 `
 
-const EditRanking = ({}) => {
+const EditRanking = () => {
   const [novosPontos, setNovosPontos] = useState(0);
   
   let {loading, error, data, refetch } = useQuery(getAllGamers)
@@ -100,6 +100,17 @@ const EditRanking = ({}) => {
   useEffect(() => {
     setNovosPontos(data.participantes.pontos);
   }, [data]);
+
+  const handleAction = (novosPontos) => {
+    const [gamerChanged, {}] = useMutation(saveUserChanged)
+
+    gamerChanged({
+      variables: {
+        points: novosPontos,
+        gamer: participante.nome,
+      }
+    })
+  }
 
     return (
       
@@ -112,16 +123,7 @@ const EditRanking = ({}) => {
             <EditCard key={participante.nome} 
             gamer={participante.nome} 
             points={participante.pontos} 
-            onAction={(novosPontos) => {
-              const [gamerChanged, {}] = useMutation(saveUserChanged)
-
-              gamerChanged({
-                variables: {
-                  points: novosPontos,
-                  gamer: participante.nome,
-                }
-              })
-            }}/>
+            onAction={handleAction}/>
           )
         })}
       
