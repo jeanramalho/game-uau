@@ -57,8 +57,6 @@ const EditRanking = ({}) => {
                   gamer: participante.nome,
                 }
               })
-
-              return alert("dados salvos com sucesso")
             }}/>
           )
         })}
