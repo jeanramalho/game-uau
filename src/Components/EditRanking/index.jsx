@@ -97,6 +97,8 @@ const EditRanking = () => {
    
   if (loading)  {return  <Text>Loading...</Text>}
 
+  const pontinhos = 323
+
   useEffect(() => {
     setNovosPontos(data.participantes.pontos);
   }, [data]);
