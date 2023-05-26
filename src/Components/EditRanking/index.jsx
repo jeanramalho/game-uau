@@ -73,7 +73,6 @@
 
 // export default EditRanking
 
-
 import {Text, View, Button, TouchableOpacity } from 'react-native'
 import React, { useState, useEffect } from 'react'
 import styles from "./style"
@@ -92,24 +91,15 @@ const getAllGamers = gql`
 `
 
 const EditRanking = ({}) => {
+  const [novosPontos, setNovosPontos] = useState(0);
+  
+  let {loading, error, data, refetch } = useQuery(getAllGamers)
+   
+  if (loading)  {return  <Text>Loading...</Text>}
 
-    let {loading, error, data, refetch } = useQuery(getAllGamers)
-    const [novosPontos, setNovosPontos] = useState(0);
-
-    if (loading)  {return  <Text>Loading...</Text>}
-
-    // function updateGamer(newPoints, nameGamer) {
-
-    useEffect(() => {
-      const [gamerChanged, {}] = useMutation(saveUserChanged)
-
-      gamerChanged({
-        variables: {
-          points: novosPontos,
-          gamer: participante.nome,
-        }
-      })
-    }, [novosPontos]);
+  useEffect(() => {
+    setNovosPontos(data.participantes.pontos);
+  }, [data]);
 
     return (
       
@@ -123,7 +113,14 @@ const EditRanking = ({}) => {
             gamer={participante.nome} 
             points={participante.pontos} 
             onAction={(novosPontos) => {
-              setNovosPontos(novosPontos);
+              const [gamerChanged, {}] = useMutation(saveUserChanged)
+
+              gamerChanged({
+                variables: {
+                  points: novosPontos,
+                  gamer: participante.nome,
+                }
+              })
             }}/>
           )
         })}
