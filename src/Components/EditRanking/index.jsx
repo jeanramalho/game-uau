@@ -72,6 +72,7 @@
 // }
 
 // export default EditRanking
+
 import {Text, View, Button, TouchableOpacity } from 'react-native'
 import React, { useState, useEffect } from 'react'
 import styles from "./style"
@@ -111,6 +112,10 @@ const EditRanking = () => {
         gamer: participante.nome,
       }
     })
+  }
+
+  if (error) {
+    return <Text>Error! {error.message}</Text>;
   }
 
     return (
