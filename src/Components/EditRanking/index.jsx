@@ -129,6 +129,7 @@ const EditRanking = () => {
             <EditCard key={participante.nome} 
             gamer={participante.nome} 
             points={participante.pontos} 
+            newPoints={novosPontos}
             onAction={() => handleAction(novosPontos)}/>
           )
         })}
