@@ -1,7 +1,3 @@
-import { View, Text, TouchableOpacity, TextInput } from 'react-native'
-import styles  from "./style"
-import { MaterialIcons, Fontisto } from '@expo/vector-icons'
-
 const EditCard = ({gamer, points, newPoints, onAction}) => {
     let novosPontos = points + newPoints
     const upGamer = ''

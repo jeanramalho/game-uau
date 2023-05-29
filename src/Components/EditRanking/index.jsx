@@ -100,7 +100,7 @@ const EditRanking = () => {
   const pontinhos = 323
 
   useEffect(() => {
-    setNovosPontos(parseInt(data.participantes.pontos) + 350);
+    setNovosPontos(parseInt(data.participantes.pontos) + pontinhos);
   }, [data]);
 
   const handleAction = (novosPontos) => {
