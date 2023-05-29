@@ -72,7 +72,6 @@
 // }
 
 // export default EditRanking
-
 import {Text, View, Button, TouchableOpacity } from 'react-native'
 import React, { useState, useEffect } from 'react'
 import styles from "./style"
@@ -125,7 +124,7 @@ const EditRanking = () => {
             <EditCard key={participante.nome} 
             gamer={participante.nome} 
             points={participante.pontos} 
-            onAction={handleAction}/>
+            onAction={() => handleAction(novosPontos)}/>
           )
         })}
       
