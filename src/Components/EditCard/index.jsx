@@ -20,8 +20,8 @@ const EditCard = ({gamer, points, newPoints, onAction}) => {
                     <MaterialIcons name="delete" size={18} color="#00cccc"/>
                 </TouchableOpacity>
 
-                <TouchableOpacity style={styles.buttonStyle}>
-                    <Fontisto name="save-1" size={18} color="#00cccc"  onPress={onAction}/>
+                <TouchableOpacity style={styles.buttonStyle} onPress={onAction}>
+                    <Fontisto name="save-1" size={18} color="#00cccc"/>
                 </TouchableOpacity>
                 
             </View>
