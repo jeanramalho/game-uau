@@ -136,9 +136,6 @@ const EditRanking = () => {
       </View>
     )
   
- 
-    
-  
 }
 
 export default EditRanking
