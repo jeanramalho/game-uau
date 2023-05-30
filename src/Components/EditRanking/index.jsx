@@ -98,20 +98,6 @@ const EditRanking = () => {
 
   const pontinhos = 323
 
-  useEffect(() => {
-    setNovosPontos(parseInt(data.participantes.pontos) + pontinhos);
-  }, [data]);
-
-  const handleAction = (novosPontos) => {
-    const [gamerChanged, {}] = useMutation(saveUserChanged)
-
-    gamerChanged({
-      variables: {
-        points: novosPontos,
-        gamer: participante.nome,
-      }
-    })
-  }
 
   if (error) {
     return <Text>Error! {error.message}</Text>;
@@ -123,6 +109,21 @@ const EditRanking = () => {
       
         <Text style={styles.title}> Edit Gamers </Text>
         {data.participantes.map(participante => {
+
+          const handleAction = (novosPontos) => {
+            const [gamerChanged, {}] = useMutation(saveUserChanged)
+
+            gamerChanged({
+              variables: {
+                points: novosPontos,
+                gamer: participante.nome,
+              }
+            })
+          }
+
+        useEffect(() => {
+          setNovosPontos(parseInt(participante.pontos) + pontinhos);
+        }, [data]);
           
           return (
             <EditCard key={participante.nome} 
