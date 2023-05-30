@@ -72,9 +72,8 @@
 // }
 
 // export default EditRanking
-
 import {Text, View, Button, TouchableOpacity } from 'react-native'
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext, useRef, useMemo, useCallback, useSyncExternalStore } from 'react'
 import styles from "./style"
 import EditCard from "../EditCard"
 import { gql, useQuery, useMutation } from "@apollo/client"
@@ -92,6 +91,8 @@ const getAllGamers = gql`
 
 const EditRanking = () => {
   const [novosPontos, setNovosPontos] = useState(0);
+  const context = useContext();
+  const ref = useRef();
   
   let {loading, error, data, refetch } = useQuery(getAllGamers)
    
@@ -103,7 +104,7 @@ const EditRanking = () => {
     setNovosPontos(parseInt(data.participantes.pontos) + pontinhos);
   }, [data]);
 
-  const handleAction = (novosPontos) => {
+  const handleAction = useCallback((novosPontos) => {
     const [gamerChanged, {}] = useMutation(saveUserChanged)
 
     gamerChanged({
@@ -112,7 +113,13 @@ const EditRanking = () => {
         gamer: participante.nome,
       }
     })
-  }
+  }, []);
+
+  const syncData = useSyncExternalStore(ref);
+
+  const memoizedValue = useMemo(() => {
+    return context.value * 2;
+  }, [context.value]);
 
   if (error) {
     return <Text>Error! {error.message}</Text>;
