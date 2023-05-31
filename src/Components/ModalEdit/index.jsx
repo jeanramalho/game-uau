@@ -1,4 +1,5 @@
-const { View } = require("react-native-web");
+import { View } from "react-native-web"
+import { useState } from "react"
 
 const ModalEdit = () => {
 
