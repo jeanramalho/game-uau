@@ -3,7 +3,9 @@ import { useState } from "react"
 
 const ModalEdit = () => {
         <View>
-            
+            <Modal>
+                
+            </Modal>
         </View>
 }
 
