@@ -4,7 +4,7 @@ import { useState } from "react"
 const ModalEdit = () => {
         <View>
             <Modal>
-                
+                <Text>Testando Modal</Text>
             </Modal>
         </View>
 }
