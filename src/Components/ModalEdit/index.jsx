@@ -3,7 +3,11 @@ import { useState } from "react"
 
 const ModalEdit = () => {
         <View>
-            <Modal>
+            <Modal
+            animationType="slide"
+            transparent={true}
+            visible={true}
+            >
                 <Text>Testando Modal</Text>
             </Modal>
         </View>
